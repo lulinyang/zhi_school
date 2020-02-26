@@ -1,0 +1,17 @@
+<view class="img_box">
+  <image src="{{bgUrl}}/paymented_icon.png" style="width: 262rpx;height:262rpx;"></image>
+</view>
+<view class="payment_title">支付成功</view>
+
+<van-row gutter="16" custom-class="group_btn_box">
+  <van-col span="12">
+    <van-button color="#19D079" custom-class="left_btn">
+      <label>查看订单</label>
+    </van-button>
+  </van-col>
+  <van-col span="12">
+    <van-button color="#FFE600" custom-class="right_btn" bind:click="jumpIndex">
+      <label>回到首页</label>
+    </van-button>
+  </van-col>
+</van-row>

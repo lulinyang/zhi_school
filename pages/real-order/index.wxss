@@ -1,0 +1,84 @@
+/* pages/real-order/index.wxss */
+button:not([size='mini']) {
+  min-height: 0;
+}
+.address_info {
+  text-align: left;
+  font-size: 28rpx;
+  color: #333;
+  padding-left: 16px;
+  line-height: 50rpx;
+}
+
+.contact_info {
+  text-align: left;
+  font-size: 24rpx;
+  color: #666;
+  padding-left: 16px;
+  line-height: 40rpx;
+}
+.van-hairline.van-hairline-700 {
+  height: 16rpx;
+  border-radius: 8rpx;
+}
+.shopping_name {
+  text-align: left;
+  font-size: 28rpx;
+  color: #333333;
+}
+.goods_name {
+  text-align: left;
+  font-size: 28rpx;
+  color: #333333;
+  padding-left: 16rpx;
+  line-height: 80rpx;
+}
+.goods_info {
+  line-height: 80rpx;
+  text-align: right;
+}
+.goods_info_num, .goods_info_price{
+  color: #333333;
+  font-size: 28rpx;
+}
+.goods_info_price {
+  margin-left: 40rpx;
+}
+.goods_item_cell.van-cell {
+  padding-bottom: 0;
+}
+.left_info_title {
+  text-align: left;
+  font-size: 26rpx;
+  color: #333333;
+}
+
+.right_info_content {
+  text-align: right;
+  font-size: 28rpx;
+  color: #333333;
+}
+.total_price {
+  font-size: 36rpx;
+  color: #FF0000;
+  margin-left: 10rpx;
+}
+.textarea_title {
+  text-align: left;
+  color: #333333;
+  font-size: 26rpx;
+}
+.textarea_content {
+  text-align: left;
+  border: 1px solid #F6F6F6;
+  width: calc(100% - 22px);
+  height: 107px;
+  padding: 6px 10px;
+  color: #000;
+  font-size: 24rpx;
+}
+.textarea_content_placeholder {
+  font-size: 24rpx;
+  color: #999999;
+}
+

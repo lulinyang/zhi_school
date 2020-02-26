@@ -1,0 +1,49 @@
+/* pages/dynamic-details/index.wxss */
+.reply_all_info {
+  background-color: #F8F8F8;
+  padding: 12rpx 0 0;
+  /* margin-top: 16rpx; */
+}
+.reply_all_info_cell.van-cell {
+  background-color: #F8F8F8;
+  padding-bottom: 0;
+}
+.reply_user_info {
+  text-align: left;
+}
+.reply_user_name {
+  color: #333333;
+  font-size: 26rpx;
+  padding-left: 15rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+  margin-right: 16rpx;
+}
+.reply_user_tag {
+  font-size: 20rpx;
+  color: #666;
+  background-color: #FFF9C2;
+  padding: 5rpx 8rpx;
+  border-radius: 4rpx;
+}
+.reply_time {
+  text-align: right;
+  color: #AAAAAA;
+  font-size: 20rpx;
+  line-height: 60rpx;
+}
+.reply_content_text {
+  color: #222222;
+  font-size: 26rpx;
+  margin-bottom: 5rpx;
+}
+.reply_reply_info {
+  font-size: 22rpx;
+  color: #666;
+  line-height: 40rpx;
+  background-color: #f2f2f2;
+  padding: 6rpx 16rpx;
+}
+.reply_reply_info label {
+  color: #1F4EA2;
+}

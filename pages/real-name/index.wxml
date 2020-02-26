@@ -1,0 +1,96 @@
+<!--pages/real-name/index.wxml-->
+<view>
+  <van-field bind:input="getPhone" value="{{ userInfo.phone }}" center clearable placeholder="请输入您的手机号" border="{{ false }}" use-button-slot size="large">
+    <view slot="left-icon" class="input-label">手机号:</view>
+    <van-button slot="button" size="small" color="#FFE600" custom-class="code-btn" bind:click="sendCode">
+      <label>{{second > 0 ? second + 's': '发送验证码'}}</label>
+    </van-button>
+  </van-field>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-field bind:input="getCode" value="{{ userInfo.code }}" center clearable placeholder="请输入验证码" border="{{ false }}" size="large">
+    <view slot="left-icon" class="input-label">验证码:</view>
+  </van-field>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-field bind:input="getName" value="{{ userInfo.name }}" center clearable placeholder="请输入姓名" border="{{ false }}" size="large">
+    <view slot="left-icon" class="input-label">姓名:</view>
+  </van-field>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-field bind:input="getSchoolName" value="{{ userInfo.school_name }}" center clearable placeholder="请输入学校" border="{{ false }}" size="large">
+    <view slot="left-icon" class="input-label">学校:</view>
+  </van-field>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-field bind:input="getDepartment" value="{{ userInfo.department }}" center clearable placeholder="请输入院系" border="{{ false }}" size="large">
+    <view slot="left-icon" class="input-label">院系:</view>
+  </van-field>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+
+<view>
+  <van-cell border="{{false}}">
+    <view class="card_id_box">
+      <view class="label_img">身份证照片：</view>
+      <van-row gutter="20">
+        <van-col span="12">
+          <image src="{{bgUrl}}/card_id_1.png" style="width:100%;height:103px;" data-img_type="img_card_1" bindtap="uploadImg" wx:if="{{!userInfo.img_card_1}}"></image>
+          <image src="{{baseUrl + userInfo.img_card_1}}" style="width:100%;height:103px;" data-img_type="img_card_1" bindtap="uploadImg" wx:else></image>
+          <view class="img_dec">点击上传人像面</view>
+        </van-col>
+        <van-col span="12">
+          <image src="{{bgUrl}}/card_id_2.png" style="width:100%;height:103px;" data-img_type="img_card_2" bindtap="uploadImg" wx:if="{{!userInfo.img_card_2}}"></image>
+          <image src="{{baseUrl + userInfo.img_card_2}}" style="width:100%;height:103px;" data-img_type="img_card_2" bindtap="uploadImg" wx:else></image>
+          <view class="img_dec">点击上传国徽面</view>
+        </van-col>
+      </van-row>
+    </view>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-cell border="{{false}}">
+    <view class="card_id_box">
+      <view class="label_img">上传校园卡（含照片页）：</view>
+      <van-row gutter="20">
+        <van-col span="12">
+          <image src="{{bgUrl}}/school_card.png" style="width:100%;height:103px;" data-img_type="img_school_card" bindtap="uploadImg" wx:if="{{!userInfo.img_school_card}}"></image>
+          <image src="{{baseUrl + userInfo.img_school_card}}" style="width:100%;height:103px;" data-img_type="img_school_card" bindtap="uploadImg" wx:else></image>
+          <view class="img_dec">点击上传校园卡</view>
+        </van-col>
+      </van-row>
+    </view>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view class="btn_box">
+  <van-button color="#FFE600" custom-class="submit_btn" disabled="{{isSubmit}}" open-type="getUserInfo" bind:getuserinfo="getUserInfo">
+    <label>提交</label>
+  </van-button>
+</view>

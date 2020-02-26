@@ -1,0 +1,49 @@
+<van-cell border="{{false}}">
+  <van-row custom-class="index-nav">
+    <van-col span="11">
+      <view class="nav-item {{type*1 === 1 ? 'nav-item-selected': ''}}" data-type="1" bindtap="changeType">
+        商城消息
+        <view class="nav-item-active" wx:if="{{type*1 === 1}}"></view>
+      </view>
+    </van-col>
+    <van-col span="2">
+      <view class="line-1"></view>
+    </van-col>
+    <van-col span="11">
+      <view class="nav-item {{type*1 === 2 ? 'nav-item-selected': ''}}" data-type="2" bindtap="changeType">
+        旅游消息
+        <view class="nav-item-active" wx:if="{{type*1 === 2}}"></view>
+      </view>
+    </van-col>
+  </van-row>
+</van-cell>
+
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+<view wx:for="{{list}}" wx:key="index">
+  <van-cell center="{{true}}" border="{{false}}" clickable>
+    <van-image slot="icon" round width="108rpx" height="108rpx" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/5061bdcd1ca0be9e2f412c8877fcbf9c%20copy%202%402x.png" />
+    <view class="message-info-box">
+      <view class="message-username">
+        你在
+        <label class="message-username-send">【书亦烧仙草】</label>
+        的订单已被接单，配送员将在30分钟内送达
+      </view>
+    </view>
+    <view slot="right-icon">
+      <view class="message-time">12:36</view>
+      <view style="text-align: center;">
+        <!-- <label class="reply_box" wx:if="{{item.num > 0}}">
+          回复 -->
+        <label class="tag-num" wx:if="{{item.num > 0 && item.num <= 99}}">{{item.num}}</label>
+        <label class="tag-num" wx:elif="{{item.num > 99}}">99+</label>
+        <!-- </label>
+        <label class="reply_box2" wx:else>回复</label> -->
+      </view>
+    </view>
+  </van-cell>
+  <van-cell center="{{true}}" border="{{false}}" custom-class="line-bottom">
+    <view class="line"></view>
+  </van-cell>
+</view>

@@ -1,0 +1,42 @@
+
+.message-info-box {
+  text-align: left;
+  padding-left: 20rpx;
+}
+.message-username {
+  color: #333;
+  font-size: 32rpx;
+}
+.message-last {
+  color: #999;
+  font-size: 26rpx;
+}
+.message-time {
+  color: #999;
+  font-size: 26rpx;
+}
+.van-cell.line-bottom {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.van-cell.line-bottom .line {
+  height: 1px;
+  background-color: #f6f6f6;
+}
+.van-tag-size {
+  width: 30px;
+  height: 18px;
+  display: inline-block;
+}
+.tag-num{
+  display: inline-block;
+  width: 36rpx;
+  height: 36rpx;
+  line-height: 36rpx;
+  border-radius: 50%;
+  background-color: #FFE600;
+  text-align: center;
+  color: #333;
+  font-size: 20rpx;
+  margin: 0 auto;
+}

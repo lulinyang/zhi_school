@@ -1,0 +1,112 @@
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+.company_name {
+  text-align: left;
+  font-size: 13px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 1);
+  line-height: 18px;
+  padding-left: 16rpx;
+}
+
+.tourism_dec {
+  padding: 20rpx 32rpx;
+  font-size: 14px;
+  font-weight: 500;
+  color: rgba(34, 34, 34, 1);
+  line-height: 20px;
+}
+
+.tourism_dec_word {
+  padding: 0rpx 32rpx 20rpx;
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(34, 34, 34, 1);
+  line-height: 13px;
+}
+
+.tourism_dec_word label {
+  margin-right: 30rpx;
+}
+
+.tourism_img {
+  padding: 20rpx 32rpx;
+}
+
+.tourism_dec_info {
+  padding: 10rpx 32rpx;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 20px;
+}
+
+.input_item {
+  text-align: left;
+}
+
+.input_label {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 16px;
+}
+
+.input_item_placeholder {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(187, 187, 187, 1);
+  line-height: 14px;
+}
+
+.btn_add_box {
+  text-align: center;
+  margin: 20rpx 0 40rpx;
+}
+
+.plus_btn.van-button {
+  width: 117px;
+  height: 32px;
+  line-height: 32px;
+  padding: 0;
+}
+
+.plus_btn.van-button label {
+  font-weight: normal;
+}
+
+.statistics.van-cell {
+  background-color: #fff9c2;
+}
+
+.statistics_left {
+  text-align: left;
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 20px;
+}
+
+.right_icon_text {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 20px;
+}
+
+.font_size {
+  font-size: 18px;
+  font-weight: 500;
+  color: rgba(255, 0, 0, 1);
+  line-height: 17px;
+}
+
+.msg_tips {
+  padding: 20px 16px 0;
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+  line-height: 17px;
+}

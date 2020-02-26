@@ -1,0 +1,50 @@
+/* pages/add-address/index.wxss */
+.input_label {
+  font-size: 28rpx;
+  color: #000;
+}
+.input_filed {
+  text-align: left;
+}
+.input_filed input {
+  color: #000;
+}
+.placeholder_filed {
+  font-size: 26rpx;
+  color: #BBBBBB;
+}
+.filed_cell.van-cell {
+  padding-bottom: 0;
+}
+.sex_box {
+  padding: 0 0 0 16px;
+}
+.sex_tag {
+  width: 80rpx;
+  height: 40rpx;
+  border: 1px solid #BBBBBB;
+  display: inline-block;
+  text-align: center;
+  line-height: 40rpx;
+  color: #BBBBBB;
+  font-size: 24rpx;
+  border-radius: 4rpx;
+  /* border-radius: 50%; */
+}
+.sex_tag2 {
+  margin-left: 16rpx;
+}
+.sex_tag.sex_tag_active {
+   color: #3A7CFD;
+   border: 1px solid #3A7CFD;
+}
+
+
+.btn_box_footer {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 32px);
+  padding: 20rpx 16px 60rpx;
+  background-color: #fff;
+  z-index: 999;
+}

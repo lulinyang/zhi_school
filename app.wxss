@@ -1,0 +1,137 @@
+/**app.wxss**/
+@import "./components/common/index.wxss";
+
+.line-bottom {
+  padding: 0 16px;
+}
+
+.van-hairline {
+  height: 1px;
+  background-color: #eee;
+}
+
+/* 底部按钮开始 */
+
+.btn_box {
+  padding: 30px 16px 40px;
+}
+
+.submit_btn.van-button {
+  width: 100%;
+}
+
+.submit_btn.van-button label {
+  color: #000;
+  font-weight: normal;
+  font-size: 28rpx;
+}
+
+/* 底部按钮结束 */
+
+/* 动态列表开始 */
+
+.head_url {
+  width: 54rpx;
+  height: 54rpx;
+  border-radius: 50%;
+}
+
+.dynamic_content {
+  text-align: left;
+}
+
+.user_name {
+  color: #333;
+  font-size: 26rpx;
+  padding-left: 15rpx;
+  line-height: 60rpx;
+  font-weight: 700;
+}
+
+.user_tag {
+  text-align: right;
+  line-height: 60rpx;
+}
+
+.user_tag label {
+  font-size: 20rpx;
+  color: #666;
+  background-color: #fff9c2;
+  padding: 5rpx 8rpx;
+  border-radius: 4rpx;
+}
+
+.dynamic_content_text {
+  /* padding-left: 15rpx; */
+  font-size: 26rpx;
+  color: #222;
+  line-height: 36rpx;
+  padding: 0rpx 0 20rpx;
+}
+
+.created_at {
+  color: #aaa;
+  font-size: 20rpx;
+}
+
+.dynamic_icon {
+  margin-left: 60rpx;
+}
+
+.dynamic_reply {
+  background-color: #f8f8f8;
+  padding: 15rpx 20rpx;
+}
+
+.dynamic_icon2 {
+  vertical-align: middle;
+}
+
+.fabulous_user_name {
+  font-size: 22rpx;
+  color: #000;
+  margin-left: 15rpx;
+  margin-right: 15rpx;
+  vertical-align: top;
+}
+
+.fabulous_user_names {
+  font-size: 22rpx;
+  color: #666;
+  vertical-align: top;
+}
+
+.fabulous_user_replys {
+  font-size: 22rpx;
+  color: #666;
+  vertical-align: top;
+  margin-left: 15rpx;
+}
+
+.dynamic_reply_info {
+  font-size: 22rpx;
+  color: #666;
+  line-height: 40rpx;
+}
+
+.dynamic_reply_info label {
+  color: #1f4ea2;
+}
+
+/* 动态列表结束 */
+
+
+/* 头像开始 */
+.head_url {
+  border-radius: 50%;
+}
+/* 头像结束 */
+
+
+/* 下划线加粗开始 */
+.van-hairline.van-hairline-700 {
+  height: 16rpx;
+  border-radius: 8rpx;
+}
+
+/* 下划线加粗结束 */

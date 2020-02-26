@@ -1,0 +1,40 @@
+<view class="my_bg" style="background-image:url({{bgUrl}}/my_bg.png)"></view>
+<view class="card_user_info_box">
+  <view class="card_user_info_cell">
+    <van-cell border="{{false}}" center="{{true}}" size="large" clickable url="/pages/my-info/index">
+      <image slot="icon" style="width:120rpx;height:120rpx;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/5061bdcd1ca0be9e2f412c8877fcbf9c%20copy%202%402x.png"></image>
+      <view class="card_info_user_name">王菲</view>
+      <view style="text-align: left;padding-left: 10rpx;">
+        <view class="card_info_school">信息工程学院</view>
+      </view>
+      <van-icon slot="right-icon" name="arrow" />
+    </van-cell>
+    <view class="line-bottom">
+      <view class="van-hairline"></view>
+    </view>
+    <van-cell border="{{false}}" center="{{true}}" size="large">
+      <van-row custom-class="card_info_price">
+        <van-col span="12" custom-class="card_info_price_left">
+          <label>可提现金额：</label>
+          <label class="price_num">￥540</label>
+        </van-col>
+        <van-col span="12" custom-class="card_info_price_right">
+          <van-button color="#FFEA2F" custom-class="withdrawal" bind:click="jumpWithdrawal">
+            <label>提现</label>
+          </van-button>
+        </van-col>
+      </van-row>
+    </van-cell>
+  </view>
+</view>
+
+<view class="grid_box">
+  <van-grid column-num="3" border="{{false}}" clickable>
+    <van-grid-item wx:for="{{ nav_list }}" wx:key="index" data-page="{{item.page}}" bind:click="jumpPage">
+      <image slot="icon" src="{{item.icon}}" style="width:42px;height:42px;"></image>
+      <view slot="text" class="text_title">{{item.text}}</view>
+    </van-grid-item>
+  </van-grid>
+</view>
+
+<tabbar tabbar="{{tabbar}}"></tabbar>

@@ -1,0 +1,27 @@
+<view class="concurrent_post_dynamic_item">
+  <van-cell border="{{false}}" center="{{true}}">
+    <image slot="icon" style="width:40px;height:40px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%402x.png"></image>
+    <view class="cell_title" slot="title">便利店</view>
+    <view class="cell_time" slot="right-icon">今天 11:00</view>
+  </van-cell>
+  <view class="concurrent_post_dynamic_content">冬天到了，本店需求量陡增，急需4名送零食及其他代跑腿业务的兼职，两男两女，有意者尽快报名</view>
+  <view class="concurrent_post_dynamic_img">
+    <image style="width: 100%;" mode="widthFix" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/dddd.png"></image>
+  </view>
+  <view class="concurrent_post_dynamic_footer">
+    <view class="concurrent_post_dynamic_footer_text">
+      已报
+      <label class="number_left">17</label>人/总需求
+      <label class="number_right">30</label>人
+    </view>
+    <van-button color="#E9F4FF" custom-class="state_btn1">
+      <label>已报满</label>
+    </van-button>
+  </view>
+</view>
+
+<view class="btn_box">
+  <van-button color="#FFE600" custom-class="submit_btn" bind:click="submit">
+    <label>立即报名</label>
+  </van-button>
+</view>

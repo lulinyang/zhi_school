@@ -1,0 +1,37 @@
+/* pages/real-name/index.wxss */
+button:not([size='mini']) {
+  min-height: 0;
+}
+.code-btn.van-button {
+  width: 172rpx;
+  height: 64rpx;
+}
+.code-btn.van-button label {
+  color: #000000;
+}
+.input-label {
+  width: 60px;
+}
+.card_id_box {
+  text-align: left;
+}
+.label_img {
+  color: #333;
+  font-size: 28rpx;
+  margin-bottom: 10rpx;
+}
+.img_dec {
+  text-align: center;
+  color: #999;
+  font-size: 24rpx;
+}
+.btn_box {
+  padding: 30px 16px 40px;
+}
+.submit_btn.van-button {
+  width: 100%;
+}
+.submit_btn.van-button label {
+  color: #000;
+  font-weight: normal;
+}

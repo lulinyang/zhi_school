@@ -1,0 +1,81 @@
+<!-- 动态详情开始 -->
+<!-- <view class="dynamic_box"> -->
+<view class="dynamic_item">
+  <van-cell border="{{false}}">
+    <image slot="icon" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%20Copy%402x.png" class="head_url"></image>
+    <view class="dynamic_content">
+      <van-row>
+        <van-col span="16">
+          <view class="user_name">方拾贰</view>
+        </van-col>
+        <van-col span="8">
+          <view class="user_tag">
+            <label>艺术学院</label>
+          </view>
+        </van-col>
+      </van-row>
+      <view class="dynamic_content_text">
+        表白今天1.2节课J4-312的监考女老师，太美丽了！爱了。
+      </view>
+      <view class="imgs">
+        <image src="https://lulinyang.oss-cn-beijing.aliyuncs.com/8b90bd73ab7f933d001a4ea4ef000d83.jpeg" mode="widthFix" style="width:100%;"></image>
+      </view>
+      <van-row>
+        <van-col span="8">
+          <view class="created_at">今天 16:00</view>
+        </van-col>
+        <van-col span="16">
+          <view class="user_tag">
+            <van-icon custom-class="dynamic_icon" size="16" name="../../images/fabulous_icon.png" />
+            <van-icon custom-class="dynamic_icon" size="16" name="../../images/msg_icon.png" />
+            <van-icon custom-class="dynamic_icon" size="16" name="../../images/share_icon.png" />
+          </view>
+        </van-col>
+      </van-row>
+      <view class="dynamic_reply">
+        <view>
+          <van-icon custom-class="dynamic_icon2" name="../../images/fabulous_icon.png" />
+          <label class="fabulous_user_name">vimokso</label>
+          <label class="fabulous_user_names">等89人觉得很赞</label>
+        </view>
+      </view>
+    </view>
+
+  </van-cell>
+
+  <view class="reply_all_info" wx:for="{{list}}" wx:key="index">
+    <van-cell custom-class="reply_all_info_cell" border="{{false}}">
+      <image slot="icon" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%20Copy%402x.png" class="head_url"></image>
+      <view class="reply_user_info">
+        <van-row>
+          <van-col span="16">
+            <view class="user_name">
+              <label class="reply_user_name">方拾贰</label>
+              <label class="reply_user_tag">艺术学院</label>
+            </view>
+          </van-col>
+          <van-col span="8">
+            <view class="reply_time">今天 16:02</view>
+          </van-col>
+        </van-row>
+        <view class="reply_content_text">
+          同样不会英语的大学生一枚。
+        </view>
+        <view class="reply_reply_info">
+          <label>楼主</label>回复
+          <label>信息工程学院-程圆圆：</label>太难了
+        </view>
+        <view class="reply_reply_info">
+          <label>路人甲</label>回复
+          <label>信息工程学院-程圆圆：</label>太难了
+        </view>
+      </view>
+      <!-- <view class="line-bottom" > -->
+        <view class="van-hairline" style="background-color:#F2F2F2;margin-top: 32rpx;"></view>
+      <!-- </view> -->
+    </van-cell>
+
+  </view>
+</view>
+<!-- </view> -->
+<!-- 动态详情结束 -->

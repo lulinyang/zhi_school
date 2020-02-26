@@ -1,0 +1,134 @@
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+page {
+  background-color: #FBFBFB;
+}
+.spinner_box {
+  text-align: center;
+  padding: 80rpx 0 0;
+}
+.room {
+  background-color: #FBFBFB;
+}
+
+.scroll-view {
+  background-color: #FBFBFB;
+}
+
+.van-cell.chat-item {
+  background-color: #FBFBFB;
+}
+
+.chat-content-text {
+  text-align: left;
+  padding: 20rpx;
+}
+
+.content-text-left {
+  background-color: #fff;
+  color: #000;
+  display: inline-block;
+  padding: 15rpx 30rpx;
+  font-size: 28rpx;
+  border-radius: 2px 8px 8px 2px;
+  white-space: normal;
+  word-break: break-all;
+  max-width: 80%;
+  -moz-box-shadow: 1px 0px 15rpx #999;
+  -webkit-box-shadow: 1px 0px 15rpx #999;
+  box-shadow: 1px 0px 15rpx #999;
+}
+
+.chat-content-text-right {
+  padding: 20rpx;
+}
+
+.content-text-right {
+  background-color: #fff9c2;
+  color: #333;
+  display: inline-block;
+  padding: 15rpx 30rpx;
+  font-size: 28rpx;
+  border-radius: 8px 2px 2px 8px;
+  white-space: normal;
+  word-break: break-all;
+  text-align: left;
+  max-width: 80%;
+  -moz-box-shadow: 1px 0px 15rpx #999;
+  -webkit-box-shadow: 1px 0px 15rpx #999;
+  box-shadow: 1px 0px 15rpx #999;
+}
+
+.chat-item-img {
+  max-width: 90%;
+}
+
+icon {
+  width: 28px;
+  height: 28px;
+}
+
+.footer-box {
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+}
+
+.send-input {
+  background-color: #f6f6f6;
+  height: 72rpx;
+  line-height: 72rpx;
+  text-align: left;
+  padding: 0 20rpx;
+  color: #333;
+}
+
+.btn-img-icon {
+  margin-left: 20rpx;
+}
+
+.btn-img {
+  vertical-align: middle;
+}
+
+.emoji-item-box {
+  text-align: center;
+}
+
+.emoji {
+  width: 28px;
+  height: 28px;
+  display: inline-block;
+}
+
+.van-button.send-btn {
+  display: inline-block;
+  width: 138rpx;
+  height: 72rpx;
+  vertical-align: middle;
+  margin-left: 10rpx;
+  line-height: 72rpx;
+}
+
+.letter_cell.van-cell {
+  padding-bottom: 30px;
+}
+
+.customer_time {
+  padding-right: 16px;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 11px;
+}
+
+.server_time {
+  text-align: left;
+  padding-left: 16px;
+  font-size: 11px;
+  font-weight: 400;
+  color: rgba(153, 153, 153, 1);
+  line-height: 11px;
+}

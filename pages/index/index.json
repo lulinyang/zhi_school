@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "首页",
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "van-search": "../../components/search/index",
+    "van-tag": "../../components/tag/index"
+  }
+}

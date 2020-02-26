@@ -1,0 +1,139 @@
+.details_name {
+  padding-left: 16rpx;
+  font-size: 13px;
+  font-weight: 500;
+  color: #000;
+}
+
+.details_time {
+  font-size: 13px;
+  font-weight: 400;
+  color: #000;
+}
+
+.details_dec_box {
+  padding: 20rpx 32rpx;
+}
+
+.details_dec_line_1 {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgba(34, 34, 34, 1);
+  line-height: 20px;
+}
+
+.details_dec_line_2 {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(34, 34, 34, 1);
+  line-height: 20px;
+}
+
+.details_dec_line_3 {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(34, 34, 34, 1);
+  line-height: 20px;
+}
+
+.icon_van {
+  margin-right: 6rpx;
+}
+
+.details_title_cell {
+  margin: 0 16px;
+  background-color: #ffe600;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 20rpx;
+  border-radius: 8rpx;
+}
+
+.details_content_box {
+  padding: 10px 16px;
+}
+
+.dot_box {
+  text-align: center;
+}
+
+.dot {
+  display: inline-block;
+  width: 16rpx;
+  height: 16rpx;
+  border-radius: 50%;
+  background-color: #ffe600;
+}
+
+.time_title_box {
+  padding-left: 32rpx;
+  line-height: 48rpx;
+}
+
+.time_title_day {
+  color: #222;
+  font-size: 26rpx;
+  background-color: #fff9c2;
+  padding: 4rpx 10rpx;
+}
+
+.time_title_address {
+  color: #222;
+  font-size: 26rpx;
+  margin-left: 16rpx;
+}
+
+.time_content_box {
+  color: #222;
+  font-size: 26rpx;
+  padding-left: 32rpx;
+  line-height: 40rpx;
+  text-align: left;
+  padding-top: 10rpx;
+}
+
+.notice_text {
+  font-size: 12px;
+  font-weight: 400;
+  color: rgba(188, 188, 188, 1);
+  line-height: 17px;
+  background:rgba(255,249,194,1);
+  padding: 10px 16px;
+  margin-top: 20rpx;
+}
+
+.content_cell.van-cell {
+  padding: 0 16px 0 20px;
+}
+
+.details_dec_line_color label {
+  color: #f00;
+}
+
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+.footer_btn_box {
+  padding: 10px 16px 30px;
+}
+
+.left_btn.van-button {
+  width: 100%;
+}
+
+.left_btn.van-button label {
+  font-weight: normal;
+  font-size: 28rpx;
+}
+
+.right_btn.van-button {
+  width: 100%;
+}
+
+.right_btn.van-button label {
+  font-weight: normal;
+  color: #000;
+  font-size: 28rpx;
+}

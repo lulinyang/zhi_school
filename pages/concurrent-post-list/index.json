@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "兼职",
+  "usingComponents": {
+    "van-search": "../../components/search/index"
+  }
+}

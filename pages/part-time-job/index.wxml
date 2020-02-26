@@ -1,0 +1,22 @@
+<view wx:for="{{list}}" wx:key="index">
+  <van-cell center="{{true}}" border="{{false}}" clickable url="/pages/group-room/index">
+    <van-image slot="icon" round width="108rpx" height="108rpx" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/5061bdcd1ca0be9e2f412c8877fcbf9c%20copy%202%402x.png" />
+    <view class="message-info-box">
+      <view class="message-username">代跑腿-湖北经济学院兼职群</view>
+      <!-- <view class="message-last">最近想打羽毛球，有时间一起吗？</view> -->
+    </view>
+    <view slot="right-icon">
+      <view class="message-time">12:36</view>
+      <view style="text-align: center;">
+        <label class="tag-num" wx:if="{{item.num > 0 && item.num <= 99}}">{{item.num}}</label>
+        <label class="tag-num" wx:elif="{{item.num > 99}}">99+</label>
+        <!-- <van-tag round color="#FFE600" text-color="#333"  wx:if="{{(item.num > 0 && item.num < 100)}}">{{item.num}}</van-tag>
+        <van-tag round color="#FFE600" text-color="#333" wx:elif="{{item.num > 99}}">99+</van-tag> -->
+        <view wx:else class="van-tag-size"></view>
+      </view>
+    </view>
+  </van-cell>
+  <van-cell center="{{true}}" border="{{false}}" custom-class="line-bottom">
+    <view class="line"></view>
+  </van-cell>
+</view>

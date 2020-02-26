@@ -1,0 +1,153 @@
+<!--index.wxml-->
+<van-search custom-class="van-search-input" shape="round" placeholder="请输入搜索内容" value="{{ value }}" background="#fff" />
+<van-cell border="{{false}}" custom-class="banner-box">
+  <swiper indicator-dots="{{false}}" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{banners}}" wx:key="index">
+      <swiper-item>
+        <image class="banner-img" src="{{item.imgUrl}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</van-cell>
+
+
+<van-cell border="{{false}}" custom-class="banner-box">
+  <swiper indicator-dots="{{false}}" style="height:67px" autoplay="true" interval="{{4000}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{bannerNavs}}" wx:key="index">
+      <swiper-item>
+        <van-row gutter="10">
+          <van-col span="12">
+            <image style="width:100%;height:67px" src="{{item[0].imgUrl}}" data-page="{{item[0].page}}" bindtap="jumpPage"></image>
+          </van-col>
+          <van-col span="12">
+            <image style="width:100%;height:67px" src="{{item[1].imgUrl}}" data-page="{{item[1].page}}" bindtap="jumpPage"></image>
+          </van-col>
+        </van-row>
+      </swiper-item>
+    </block>
+  </swiper>
+</van-cell>
+
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+<van-cell border="{{false}}">
+  <image slot="icon" src="../../images/hot_info.png" style="width:86rpx;height:86rpx;"></image>
+  <view class="hot_info_content">
+    <swiper indicator-dots="{{false}}" style="height:87px" autoplay="true" interval="{{5000}}" duration="{{duration}}" circular="true" vertical="true">
+      <block wx:for="{{bannerNavs}}" wx:key="index">
+        <swiper-item>
+          <view class="hot_info_content_item">
+            <van-tag plain type="success" custom-class="tag">标签</van-tag>A家便利店急召送零食兼职3名，两女一男。</view>
+          <view class="hot_info_content_item">
+            <van-tag plain type="primary" custom-class="tag">标签</van-tag>丽江古镇，组队出游。</view>
+        </swiper-item>
+      </block>
+    </swiper>
+  </view>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+<van-cell border="{{false}}">
+  <van-row custom-class="index-nav">
+    <van-col span="11">
+      <view class="nav-item {{type*1 === 1 ? 'nav-item-selected': ''}}" data-type="1" bindtap="changeType">
+        商城订单
+        <view class="nav-item-active" wx:if="{{type*1 === 1}}"></view>
+      </view>
+    </van-col>
+    <van-col span="2">
+      <view class="line-1"></view>
+    </van-col>
+    <van-col span="11">
+      <view class="nav-item {{type*1 === 2 ? 'nav-item-selected': ''}}" data-type="2" bindtap="changeType">
+        旅游订单
+        <view class="nav-item-active" wx:if="{{type*1 === 2}}"></view>
+      </view>
+    </van-col>
+  </van-row>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+<!-- 动态列表开始 -->
+<view class="dynamic_box" wx:if="{{uid}}">
+  <view class="dynamic_item" wx:for="list" wx:key="index" catchtap="jumpDetails">
+    <van-cell border="{{false}}">
+      <image catchtap="jumpIndividual" slot="icon" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%20Copy%402x.png" class="head_url"></image>
+      <view class="dynamic_content">
+        <van-row>
+          <van-col span="16">
+            <view class="user_name">方拾贰</view>
+          </van-col>
+          <van-col span="8">
+            <view class="user_tag">
+              <label>艺术学院</label>
+            </view>
+          </van-col>
+        </van-row>
+        <view class="dynamic_content_text">
+          表白今天1.2节课J4-312的监考女老师，太美丽了！爱了。
+        </view>
+        <view class="imgs">
+          <image src="https://lulinyang.oss-cn-beijing.aliyuncs.com/8b90bd73ab7f933d001a4ea4ef000d83.jpeg" mode="widthFix" style="width:100%;"></image>
+        </view>
+        <van-row>
+          <van-col span="8">
+            <view class="created_at">今天 16:00</view>
+          </van-col>
+          <van-col span="16">
+            <view class="user_tag">
+              <van-icon custom-class="dynamic_icon" size="16" name="../../images/fabulous_icon.png" />
+              <van-icon custom-class="dynamic_icon" size="16" name="../../images/msg_icon.png" />
+              <van-icon custom-class="dynamic_icon" size="16" name="../../images/share_icon.png" />
+            </view>
+          </van-col>
+        </van-row>
+        <view class="dynamic_reply">
+          <view>
+            <van-icon custom-class="dynamic_icon2" name="../../images/fabulous_icon.png" />
+            <label class="fabulous_user_name">vimokso</label>
+            <label class="fabulous_user_names">等89人觉得很赞</label>
+          </view>
+          <view class="van-hairline"></view>
+          <view>
+            <van-icon custom-class="dynamic_icon2" name="../../images/msg_icon.png" />
+            <label class="fabulous_user_replys">26条评论回复</label>
+          </view>
+          <view class="dynamic_reply_info">
+            <label>信息工程学院-程圆圆：</label>我也在那个教室考试，老师真的很漂亮哦。
+          </view>
+          <view class="dynamic_reply_info">
+            <label>楼主</label>回复
+            <label>信息工程学院-程圆圆</label>是吗太巧了
+          </view>
+          <view class="dynamic_reply_info">
+            <label>艺术设计学院-吴磊：</label>活捉一名考试不认真的同学，哈哈。
+          </view>
+        </view>
+      </view>
+
+    </van-cell>
+    <view class="line-bottom">
+      <view class="van-hairline"></view>
+    </view>
+  </view>
+</view>
+<!-- 动态列表结束 -->
+
+<!-- 未实名认证开始 -->
+<view class="un_name" wx:else>
+  <image src="../../images/card_icon.png" style="width:130px;height:110px;"></image>
+  <view class="un_name_text un_name_text1">还未进行实名认证，还找不到你的校圈，</view>
+  <view class="un_name_text un_name_text2">快进行实名认证吧。</view>
+  <van-button color="#FFE600" custom-class="real_name_btn" bind:click="jumpRealName">
+    <label>去实名认证</label>
+  </van-button>
+</view>
+<!-- 未实名认证结束 -->
+<view style="height:{{isIphoneX ? 184 : 120}}rpx"></view>
+<tabbar tabbar="{{tabbar}}"></tabbar>

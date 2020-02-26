@@ -1,0 +1,61 @@
+<van-cell border="{{false}}">
+  <van-row custom-class="index-nav">
+    <van-col span="11">
+      <view class="nav-item {{type*1 === 1 ? 'nav-item-selected': ''}}" data-type="1" bindtap="changeType">
+        本校圈
+        <view class="nav-item-active" wx:if="{{type*1 === 1}}"></view>
+      </view>
+    </van-col>
+    <van-col span="2">
+      <view class="line-1"></view>
+    </van-col>
+    <van-col span="11">
+      <view class="nav-item {{type*1 === 2 ? 'nav-item-selected': ''}}" data-type="2" bindtap="changeType">
+        高校圈
+        <view class="nav-item-active" wx:if="{{type*1 === 2}}"></view>
+      </view>
+    </van-col>
+  </van-row>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+<view class="switch_nav_box">
+  <view class="switch_nav_item_box">
+    <view bindtap="changeActive" data-type="1" class="switch_nav_item {{active*1 === 1 ? 'switch_nav_item_active' : ''}}">待支付</view>
+    <view bindtap="changeActive" data-type="2" class="switch_nav_item {{active*1 === 2 ? 'switch_nav_item_active' : ''}}">已支付</view>
+  </view>
+</view>
+
+<view class="order_item_box" wx:for="{{list}}" wx:key="index" bindtap="jumpDetails">
+  <view class="order_item_title_box">
+    <van-row>
+      <van-col span="16" custom-class="order_sn">订单编号：20200220</van-col>
+      <van-col span="8" custom-class="order_del_icon">
+        <van-icon name="../../images/del_icon.png" size="20" />
+      </van-col>
+    </van-row>
+  </view>
+  <van-cell border="{{false}}" custom-class="order_item_cell" clickable>
+    <image slot="icon" style="width:92px;height:92px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Mask%20Copy%402x.png"></image>
+    <view class="order_info_box">
+      <view class="order_name">书亦烧仙草</view>
+      <view class="order_dec">书亦烧仙草（大杯）</view>
+      <van-row custom-class="order_item_footer">
+        <van-col span="10" custom-class="order_price">
+        <label>¥12</label>
+          元
+        </van-col>
+        <van-col span="14" custom-class="order_btn_box">
+          <van-button color="#FFE600" custom-class="payment_btn">
+            <label>立即支付</label>
+          </van-button>
+        </van-col>
+      </van-row>
+    </view>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>

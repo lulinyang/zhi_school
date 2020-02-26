@@ -1,0 +1,25 @@
+<view class="card_widthdrawal">
+  <van-cell border="{{false}}">
+    <view slot="title" class="card_widthdrawal_price">当前余额：
+      <label style="color:#000;">1234</label>
+      元</view>
+    <view>
+      <label class="label_text">提现至</label>
+      <van-icon custom-class="label_text label_text_icon" name="../../images/wechat_icon.png" size="20" />
+      <label class="label_text">微信</label>
+    </view>
+  </van-cell>
+  <view class="van-hairline"></view>
+  <van-cell border="{{false}}">
+    <view class="widthdrawal_price">提现金额</view>
+  </van-cell>
+  <van-field type="number" value="{{ total_price }}" bind:input="getTotalPrice" clearable placeholder="请输入提现金额">
+    <view slot="left-icon" class="money_icon">¥</view>
+  </van-field>
+  <view class="van-hairline"></view>
+  <view class="btn_box" style="padding-bottom: 20px;">
+    <van-button color="#FFE600" custom-class="submit_btn" bind:click="submit">
+      <label>提现</label>
+    </van-button>
+  </view>
+</view>

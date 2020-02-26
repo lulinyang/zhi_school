@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "旅游",
+  "usingComponents": {
+    "van-search": "../../components/search/index"
+  }
+}

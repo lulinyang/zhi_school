@@ -1,0 +1,43 @@
+<van-cell border="{{false}}">
+  <view class="top_card" style="background-image: url({{bgUrl}}/bill_bg.png);">
+    <van-row>
+      <van-col span="12" custom-class="left-col">
+        可提现收益
+      </van-col>
+      <van-col span="12" custom-class="right-col">
+        <label class="right-col-label" bindtap="jumpMyProfit">
+          <label class="right-col-icon">查看收益详情</label>
+          <van-icon name="arrow" custom-class="right-col-icon right-col-icon2" size="10" />
+        </label>
+      </van-col>
+    </van-row>
+    <view class="total_price">
+      <label>450.00</label>
+      <label class="unit">元</label>
+    </view>
+    <view class="cash_withdrawal_btn_box">
+      <van-button slot="button" size="small" color="#FFE600" custom-class="withdrawal_btn" bind:click="jumpWithdrawal">
+        <label>提现</label>
+      </van-button>
+    </view>
+  </view>
+</van-cell>
+
+<van-cell border="{{false}}">
+  <view class="bill_title" slot="title">提现记录</view>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+<view wx:for="{{list}}" wx:key="index">
+  <van-cell border="{{false}}" use-label-slot center="{{true}}">
+    <van-icon slot="icon" custom-class="wx_icon"	 name="{{bgUrl}}/wx_icon.png" custom-class="right-col-icon right-col-icon2" size="32" />
+    <view class="bill_title" slot="title">提现</view>
+    <view class="bill_label" slot="label">昨天 09:57</view>
+    <view  slot="right-icon"class="add_money">+200</view>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>

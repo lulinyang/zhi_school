@@ -1,0 +1,54 @@
+<scroll-view wx:if="{{scroll_height > 0}}" scroll-y="true" class="room" style="height: {{scroll_height}}px;background:#f6f6f6;" scroll-top="{{scrollTop}}">
+  <view wx:for="{{msgList}}" wx:key="index">
+    <view class="scroll-view-item" wx:if="{{item.speaker === 'server'&&item.msg_type*1 === 1}}">
+      <van-cell custom-class="chat-item" border="{{false}}">
+        <van-image slot="icon" round width="96rpx" height="96rpx" src="{{item.from_headurl}}" />
+        <view class="chat-content-text">
+          <view class="content-text-left">{{item.content}}</view>
+        </view>
+        <view class="server_time">5分钟前</view>
+      </van-cell>
+    </view>
+    <view class="scroll-view-item" wx:if="{{item.speaker === 'customer'&&item.msg_type*1 === 1}}">
+      <van-cell custom-class="chat-item" border="{{false}}">
+        <van-image slot="right-icon" round width="96rpx" height="96rpx" src="{{item.headurl}}" />
+        <view class="chat-content-text-right">
+          <view class="content-text-right">{{item.content}}</view>
+        </view>
+        <view class="customer_time">5分钟前</view>
+      </van-cell>
+    </view>
+    <view class="scroll-view-item" wx:if="{{item.speaker === 'server'&&item.msg_type*1 === 2}}">
+      <van-cell custom-class="chat-item" border="{{false}}">
+        <van-image slot="icon" round width="96rpx" height="96rpx" src="{{item.from_headurl}}" />
+        <view class="chat-content-text">
+          <image class="chat-item-img" mode="widthFix" src="{{item.content}}" data-url="{{item.content}}" bindtap="previewImage"></image>
+        </view>
+        <view class="server_time">5分钟前</view>
+      </van-cell>
+    </view>
+    <view class="scroll-view-item" wx:if="{{item.speaker === 'customer'&&item.msg_type*1 === 2}}">
+      <van-cell custom-class="chat-item" border="{{false}}">
+        <van-image slot="right-icon" round width="96rpx" height="96rpx" src="{{item.headurl}}" />
+        <view class="chat-content-text-right">
+          <image class="chat-item-img" mode="widthFix" src="{{item.content}}" data-url="{{item.content}}" bindtap="previewImage"></image>
+        </view>
+        <view class="customer_time">5分钟前</view>
+      </van-cell>
+    </view>
+  </view>
+</scroll-view>
+
+<view class="spinner_box" wx:else>
+  <van-loading type="spinner" />
+</view>
+
+<view class="footer-box" style='bottom:{{inputBottom}}'>
+  <van-cell center="{{true}}" custom-class="letter_cell">
+    <input class="send-input" value="{{letter_content}}" bindinput="inputMsg" confirm-type='send' bindconfirm="sendPrivateLetter" bindfocus='focus' bindblur='blur' adjust-position='{{false}}' />
+    <view slot="right-icon" class="send-img-box">
+      <!-- <van-icon class="btn-img-icon btn-img" name="../../images/send_img.png" size="24" bindtap="sendPrivateLetterImg"/> -->
+      <van-button custom-class="send-btn" color="#FFE600" size="small" bindtap="sendPrivateLetter">发送</van-button>
+    </view>
+  </van-cell>
+</view>

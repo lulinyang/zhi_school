@@ -1,0 +1,95 @@
+
+.message-info-box {
+  text-align: left;
+  padding-left: 20rpx;
+}
+.message-username {
+  color: #000000;
+  font-size: 26rpx;
+}
+.message-username .message-username-send {
+  color: #3A7CFD;
+}
+.message-last {
+  color: #000000;
+  font-size: 26rpx;
+}
+.message-time {
+  color: #999;
+  font-size: 26rpx;
+}
+.van-cell.line-bottom {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+.van-cell.line-bottom .line {
+  height: 1px;
+  background-color: #f6f6f6;
+}
+/* .van-tag-size {
+  width: 30px;
+  height: 18px;
+  display: inline-block;
+} */
+.tag-num{
+  display: inline-block;
+  width: 40rpx;
+  height: 40rpx;
+  line-height: 40rpx;
+  border-radius: 50%;
+  background-color: #FFE600;
+  text-align: center;
+  color: #333;
+  font-size: 20rpx;
+  margin: 0 auto;
+  margin-top: -4rpx;
+  vertical-align: middle;
+}
+.reply_box {
+  color: #222222;
+  font-size: 26rpx;
+  background-color: #FFF9C2;
+  padding: 2rpx 0rpx 6rpx 16rpx;
+  /* border-radius: 20rpx; */
+  border-top-right-radius: 20rpx;
+  border-bottom-right-radius: 20rpx;
+}
+
+.reply_box2 {
+  color: #222222;
+  font-size: 26rpx;
+  background-color: #FFF9C2;
+  padding: 0rpx 16rpx 4rpx 16rpx;
+  /* border-radius: 20rpx; */
+}
+
+.index-nav {
+  text-align: center;
+}
+.line-1 {
+  display: inline-block;
+  width: 4rpx;
+  height: 20rpx;
+  background-color: #F0F0F0;
+  border-radius: 2rpx;
+}
+.nav-item {
+  font-size: 26rpx;
+  color: #666666;
+  /* font-weight: 700; */
+  position: relative;
+  padding: 5px 0;
+}
+.nav-item-selected {
+  color: #000;
+  font-weight: 700;
+}
+.nav-item-active {
+  position: absolute;
+  bottom: 0rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18rpx;
+  height: 8rpx;
+  background-color: #FFE600;
+}

@@ -1,0 +1,9 @@
+/* pages/dynamic-msg-details/index.wxss */
+.content_msg {
+  margin: 16px;
+  padding: 16px;
+  padding-bottom: 40px;
+  background-color: #FFF9C2;
+  color: #000;
+  font-size: 28rpx;
+}

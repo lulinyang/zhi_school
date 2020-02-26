@@ -1,0 +1,141 @@
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+.index-nav {
+  text-align: center;
+}
+
+.line-1 {
+  display: inline-block;
+  width: 4rpx;
+  height: 20rpx;
+  background-color: #f0f0f0;
+  border-radius: 2rpx;
+}
+
+.nav-item {
+  font-size: 26rpx;
+  color: #666;
+  /* font-weight: 700; */
+  position: relative;
+  padding: 5px 0;
+}
+
+.nav-item-selected {
+  color: #000;
+  font-weight: 700;
+}
+
+.nav-item-active {
+  position: absolute;
+  bottom: 0rpx;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 18rpx;
+  height: 8rpx;
+  background-color: #ffe600;
+}
+
+.switch_nav_box {
+  text-align: center;
+  padding: 16px 0;
+}
+
+.switch_nav_item_box {
+  display: inline-block;
+  background-color: #f3f3f3;
+  width: 184px;
+  height: 32px;
+  line-height: 32px;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.switch_nav_item {
+  display: inline-block;
+  width: 50%;
+  height: 33px;
+  line-height: 33px;
+  color: #666;
+  font-size: 12px;
+  vertical-align: top;
+  /* background-color:  */
+}
+
+.switch_nav_item.switch_nav_item_active {
+  background-color: #ffe600;
+  border-radius: 16px;
+  color: #000;
+}
+
+.order_item_title_box {
+  padding: 10rpx 32rpx 0;
+}
+.order_item_cell.van-cell {
+  padding-top: 0rpx;
+}
+.order_sn {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+  line-height: 18px;
+}
+
+.order_del_icon {
+  text-align: right;
+}
+
+.order_info_box {
+  text-align: left;
+  padding-left: 16rpx;
+}
+
+.order_name {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(51, 51, 51, 1);
+  line-height: 20px;
+}
+
+.order_dec {
+  font-size: 13px;
+  font-weight: 400;
+  color: rgba(102, 102, 102, 1);
+  line-height: 18px;
+}
+
+.order_item_footer {
+  margin-top: 20px;
+}
+
+.order_price {
+  line-height: 36px;
+  font-family: PingFangSC-Medium, PingFang SC;
+  font-weight: 500;
+  color: rgba(240, 54, 54, 1);
+}
+
+.order_price label {
+  color: #f03636;
+  font-size: 28rpx;
+}
+
+.order_btn_box {
+  text-align: right;
+}
+
+.payment_btn.van-button {
+  width: 100px;
+  height: 36px;
+  line-height: 36px;
+  padding: 0;
+  border-radius: 14rpx;
+}
+
+.payment_btn.van-button label {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgba(0, 0, 0, 1);
+  line-height: 20px;
+}

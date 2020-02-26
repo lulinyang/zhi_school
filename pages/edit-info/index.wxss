@@ -1,0 +1,64 @@
+/* pages/edit-info/index.wxss */
+.my_info_title {
+  padding: 20rpx 32rpx;
+  color: #000000;
+  font-size: 26rpx;
+}
+/* pages/address-list/index.wxss */
+
+.btn_box_footer {
+  position: fixed;
+  bottom: 0;
+  width: calc(100% - 32px);
+  padding: 20rpx 16px 60rpx;
+  background-color: #fff;
+  z-index: 999;
+}
+
+.submit_btn.van-button .van-icon {
+  color: #000;
+  font-size: 12px !important;
+  font-weight: 700;
+}
+
+.address_info_user {
+  text-align: left;
+  color: #333;
+  font-size: 28rpx;
+  /* padding-left: 16rpx; */
+}
+
+.address_info_contact {
+  text-align: left;
+  color: #666;
+  font-size: 24rpx;
+  padding-left: 16rpx;
+}
+
+.right_info {
+  /* line-height: 48px; */
+  text-align: center;
+  padding: 0 32rpx;
+  display: inline-block;
+  position: relative;
+  width: 80rpx;
+}
+.right_info label {
+  font-size: 28rpx;
+  color: #3A7CFD;
+  margin-left: 6rpx;
+  /* margin-top: -6rpx; */
+  line-height: 28rpx;
+}
+.write_icon {
+  margin-top: 10px;
+}
+.right_info_box {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  text-align: center;
+  border-left: 1px solid #F0F0F0;
+}

@@ -1,0 +1,28 @@
+/* pages/cash-withdrawal/index.wxss */
+page {
+  background-color: #FBFBFB;
+}
+.card_widthdrawal {
+  margin: 16px;
+  background-color: #fff;
+}
+.card_widthdrawal_price {
+  color: #333333;
+}
+.label_text {
+  vertical-align: top;
+  color: #999999;
+  font-size: 26rpx;
+}
+.label_text_icon {
+  margin: 0 6rpx;
+}
+.widthdrawal_price {
+  padding-top: 30rpx;
+  text-align: left;
+  color: #333;
+  font-size: 26rpx;
+}
+.money_icon {
+  padding-right: 16rpx;
+}

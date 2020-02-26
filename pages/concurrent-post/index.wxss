@@ -1,0 +1,95 @@
+/* pages/concurrent-post/index.wxss */
+
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+.swiper {
+  height: 161px;
+}
+
+.banner-img {
+  width: 100%;
+  height: 161px;
+}
+
+.van-cell.banner-box {
+  padding-top: 0;
+}
+
+.cell_title {
+  color: #333;
+  font-size: 26rpx;
+  padding-left: 16rpx;
+}
+
+.cell_label {
+  padding-left: 16rpx;
+}
+
+.cell_label label {
+  background-color: #fff9c2;
+  padding: 3rpx 10rpx 5rpx;
+  color: #666;
+  font-size: 20rpx;
+  border-radius: 4rpx;
+}
+
+.cell_content {
+  color: #3a7cfd;
+  font-size: 26rpx;
+}
+
+.state_btn1.van-button {
+  width: 80px;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 16rpx;
+}
+
+.state_btn1.van-button label {
+  color: #333;
+  font-size: 26rpx;
+}
+
+.number_box {
+  display: inline-block;
+  margin-right: 20rpx;
+  font-size: 26rpx;
+  color: #000;
+}
+
+.number_left {
+  color: #4785fe;
+}
+
+.number_right {
+  color: #f00;
+}
+
+.cell_time {
+  font-size: 26rpx;
+  color: #000;
+}
+
+.concurrent_post_dynamic_content {
+  padding: 0 16px 10px;
+  font-size: 26rpx;
+  color: #222;
+}
+
+.concurrent_post_dynamic_img {
+  padding: 0 16px 10px;
+}
+
+.concurrent_post_dynamic_footer {
+  padding: 0 16px 10px;
+  text-align: right;
+}
+
+.concurrent_post_dynamic_footer_text {
+  display: inline-block;
+  font-size: 26rpx;
+  color: #000;
+  margin-right: 16rpx;
+}

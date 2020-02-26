@@ -1,0 +1,21 @@
+/* pages/my-profit/index.wxss */
+
+.add_money {
+  color: #f00;
+  font-size: 28rpx;
+}
+
+.profit_box {
+  text-align: left;
+  padding-left: 16rpx;
+}
+
+.profit_title {
+  font-size: 28rpx;
+  color: #333;
+}
+
+.profit_label {
+  font-size: 24rpx;
+  color: #999;
+}

@@ -1,0 +1,40 @@
+<view>
+  <van-cell border="{{false}}" center="{{false}}">
+    <van-icon slot="icon" name="../../images/address_icon.png" />
+    <view class="address_info_user">湖北经济学院南区北二女生宿舍A栋8-408</view>
+    <view class="address_info_contact">王靖雯（女士） 15972534908</view>
+    <view slot="right-icon" class="right_info">
+      <view class="right_info_box">
+        <van-icon custom-class="write_icon" name="../../images/write_icon.png" size="13" />
+        <label>编辑</label>
+      </view>
+    </view>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+<view wx:for="{{address_list}}" wx:key="index">
+  <van-cell border="{{false}}" center="{{false}}">
+    <van-icon slot="icon" name="../../images/address_icon.png" />
+    <view class="address_info_user">湖北经济学院南区</view>
+    <view class="address_info_contact">王靖雯（女士） 15972534908</view>
+    <view slot="right-icon" class="right_info">
+      <view class="right_info_box">
+        <van-icon custom-class="write_icon" name="../../images/write_icon.png" size="13" />
+        <label>编辑</label>
+      </view>
+    </view>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view style="height:{{footer_height}}px"></view>
+<view class="btn_box btn_box_footer">
+  <van-button color="#FFE600" icon="plus" custom-class="submit_btn" bind:click="jumpAddAddress">
+    <!-- <van-icon custom-class="push_icon" name="plus" size="14"/> -->
+    <label>新增地址</label>
+  </van-button>
+</view>

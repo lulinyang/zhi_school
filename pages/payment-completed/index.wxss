@@ -1,0 +1,36 @@
+/* pages/payment-completed/index.wxss */
+
+.img_box {
+  text-align: center;
+  padding: 40rpx 0;
+}
+
+.payment_title {
+  text-align: center;
+  font-size: 32rpx;
+  color: #000;
+  margin-bottom: 40rpx;
+}
+
+.group_btn_box {
+  padding: 0 16px;
+}
+
+.left_btn.van-button {
+  width: 100%;
+}
+
+.left_btn.van-button label {
+  font-weight: normal;
+  font-size: 28rpx;
+}
+
+.right_btn.van-button {
+  width: 100%;
+}
+
+.right_btn.van-button label {
+  font-weight: normal;
+  font-size: 28rpx;
+  color: #000;
+}

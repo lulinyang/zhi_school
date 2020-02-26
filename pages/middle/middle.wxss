@@ -1,0 +1,65 @@
+/* pages/middle/middle.wxss */
+.form_box {
+  padding: 16px;
+}
+.user_head {
+  vertical-align: middle;
+  width:48rpx;
+  height:48rpx;
+}
+.user_name_info {
+  vertical-align: middle;
+  font-size: 26rpx;
+  color: #333;
+  line-height: 48rpx;
+  margin-left: 8rpx;
+}
+.textarea {
+  width: calc(100% - 34rpx);
+  border: 1px solid #F6F6F6;
+  height: 244rpx;
+  margin-top: 16rpx;
+  padding: 16rpx;
+  border-radius: 8rpx;
+  font-size: 24rpx;
+}
+.placeholder_text {
+  font-size: 24rpx;
+  color: #999999;
+}
+.row_item {
+  padding: 32rpx 0rpx
+}
+.label_title {
+  font-size: 26rpx;
+  color: #000;
+}
+
+.label_content {
+  font-size: 26rpx;
+  color: #000;
+  text-align: right;
+}
+.van-checkbox .push_checkbox {
+  margin-left: 10rpx;
+}
+.push_checkbox_box {
+  display: inline-block;
+  margin-left: 32rpx;
+}
+.upload_img_title {
+  font-size: 26rpx;
+  line-height: 80rpx;
+  color: #000;
+}
+.btn_box {
+  padding: 30px 16px 40px;
+}
+.submit_btn.van-button {
+  width: 100%;
+}
+.submit_btn.van-button label {
+  font-size: 28rpx;
+  color: #000;
+  font-weight: normal;
+}

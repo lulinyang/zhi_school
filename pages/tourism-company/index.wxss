@@ -1,0 +1,66 @@
+@import "../tourism/index.wxss";
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+.card_company_box {
+  margin: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.company_info_cell.van-cell {
+  background: transparent;
+}
+.company_name {
+  color: #fff;
+  font-size: 26rpx;
+  padding-left: 16rpx;
+}
+
+.contact.van-button {
+  width: 93px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.contact.van-button label {
+  font-weight: normal;
+  font-size: 28rpx;
+  color: #000;
+  /* line-height: 32px; */
+}
+.cell_title_a {
+  color: #222222;
+  font-size: 28rpx;
+  font-weight: 700;
+}
+.cell_title_cell.van-cell {
+  padding-bottom: 10rpx;
+}
+.concurrent_post_footer {
+  text-align: right;
+}
+.item_footer_unit {
+  font-size: 26rpx;
+  color: #333;
+}
+.concurrent_post_footer_text {
+  display: inline-block;
+  margin-right: 16rpx;
+}
+.item_footer {
+  padding: 0 16px 10px;
+}
+.size_font {
+  font-size: 16px;
+  color: #ff0000;
+}
+.item_footer_tag {
+  font-size: 26rpx;
+  color: #222;
+  background-color: #FFF9C2;
+  padding: 0 6rpx 4rpx;
+  margin-left: 16rpx;
+  border-radius: 4rpx;
+}

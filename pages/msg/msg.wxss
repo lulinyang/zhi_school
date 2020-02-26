@@ -1,0 +1,11 @@
+/* pages/msg/msg.wxss */
+.msg_title {
+  padding-left: 20rpx;
+  text-align: left;
+  font-size: 28rpx;
+  color: #000000;
+}
+
+.van-hairline-box {
+  padding: 0 16px 0 44px;
+}

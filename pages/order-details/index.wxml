@@ -1,0 +1,128 @@
+<!-- <van-cell border="{{false}}" center="{{true}}" is-link>
+  <van-icon slot="icon" name="../../images/local_icon.png" size="31" />
+  <view class="address_info">湖北经济学院南区北二女生宿舍A栋8-408</view>
+  <view class="contact_info">王靖雯 15972534908</view>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline van-hairline-700"></view>
+</view> -->
+
+<van-cell border="{{false}}" center="{{true}}">
+  <view class="shopping_name">书亦烧仙草（武汉步行街店）</view>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+<view>
+  <van-cell border="{{false}}" wx:for="{{order_list}}" wx:key="index" custom-class="goods_item_cell">
+    <image slot="icon" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/goods_details.png" style="width:80rpx;height:80rpx;"></image>
+    <van-row>
+      <van-col span="16" custom-class="goods_name">书亦烧仙草</van-col>
+      <van-col span="8" custom-class="goods_info">
+        <label class="goods_info_num">×1</label>
+        <label class="goods_info_price">¥12</label>
+      </van-col>
+    </van-row>
+    <view class="van-hairline" style="margin-top: 20rpx;" wx:if="{{index != (order_list.length - 1)}}"></view>
+  </van-cell>
+</view>
+<view class="line-bottom" style="margin-top: 20rpx;">
+  <view class="van-hairline"></view>
+</view>
+
+<view>
+  <van-cell border="{{false}}" center="{{true}}">
+    <van-row>
+      <van-col span="16" custom-class="left_info_title">配送费</van-col>
+      <van-col span="8" custom-class="right_info_content">¥2</van-col>
+    </van-row>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-cell border="{{false}}" center="{{true}}">
+    <van-row>
+      <van-col span="16" custom-class="left_info_title">包装费</van-col>
+      <van-col span="8" custom-class="right_info_content">¥1</van-col>
+    </van-row>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-cell border="{{false}}" center="{{true}}">
+    <van-row>
+      <van-col span="24" custom-class="right_info_content">
+        <label>小计</label>
+        <label class="total_price">¥29</label>
+      </van-col>
+    </van-row>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline van-hairline-700"></view>
+  </view>
+</view>
+
+<van-cell border="{{false}}" center="{{false}}" custom-class="address_cell">
+  <van-icon slot="icon" name="../../images/address_icon.png"></van-icon>
+  <view class="left_info_title" style="padding-left:16rpx;">收货地址</view>
+</van-cell>
+<van-cell border="{{false}}" center="{{false}}" custom-class="address_cell2">
+  <view class="address_info" style="padding-left:44rpx;">湖北经济学院南区北二女生宿舍A栋8-408</view>
+  <view class="contact_info" style="padding-left:44rpx;">王靖雯 15972534908</view>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+<view>
+  <van-cell border="{{false}}" center="{{true}}">
+    <van-row>
+      <van-col span="12" custom-class="left_info_title">订单编号：</van-col>
+      <van-col span="12" custom-class="right_info_content">287467483990</van-col>
+    </van-row>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view>
+  <van-cell border="{{false}}" center="{{true}}">
+    <van-row>
+      <van-col span="12" custom-class="left_info_title">下单时间：</van-col>
+      <van-col span="12" custom-class="right_info_content">2019-3-18 19:29:49</van-col>
+    </van-row>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+
+<van-cell border="{{false}}" center="{{true}}">
+  <view class="textarea_title">备注</view>
+  <textarea class="textarea_content" placeholder="请填写其他要求或注意事项" placeholder-class="textarea_content_placeholder" value="不吃辣" disabled="{{true}}"></textarea>
+</van-cell>
+
+
+<view class="btn_box">
+  <van-row gutter="16">
+    <van-col span="8">
+       <van-button color="#19D079" custom-class="submit_btn" bind:click="submit">
+        <label style="color:#fff;">联系客服</label>
+      </van-button>
+    </van-col>
+    <van-col span="16">
+      <van-button color="#3A7CFD" plain="{{true}}" custom-class="submit_btn" bind:click="submit">
+        <label style="color:#3A7CFD;">申请退款</label>
+      </van-button>
+    </van-col>
+  </van-row>
+</view>

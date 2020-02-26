@@ -1,0 +1,8 @@
+{
+  "navigationBarTitleText": "发布",
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "van-checkbox": "../../components/checkbox/index",
+    "van-switch": "../../components/switch/index"
+  }
+}

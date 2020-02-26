@@ -1,0 +1,81 @@
+/* pages/mine/mine.wxss */
+
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+.my_bg {
+  height: 97px;
+  background-color: #fff;
+  background-repeat: no-repeat;
+  background-size: cover;
+  /* background-image: url() */
+}
+
+.card_user_info_box {
+  padding: 0 16px;
+  /* -moz-box-shadow: 1px 0px 15px #999;
+  -webkit-box-shadow: 1px 0px 15px #999; *//* box-shadow: 1px 0px 15px #999; */
+  margin-top: -70px;
+}
+
+.card_user_info_cell {
+  border-radius: 4px;
+  overflow: hidden;
+  box-shadow: 1px 0px 10px #eee;
+}
+
+.card_info_user_name {
+  text-align: left;
+  font-size: 28rpx;
+  color: #333;
+  padding-left: 10rpx;
+}
+
+.card_info_school {
+  display: inline-block;
+  text-align: left;
+  font-size: 20rpx;
+  color: #666;
+  padding: 4rpx 6rpx;
+  line-height: 28rpx;
+  background-color: #fff9c2;
+  border-radius: 4rpx;
+}
+
+.card_info_price {
+  text-align: left;
+}
+
+.card_info_price_left {
+  font-size: 26rpx;
+  color: #000;
+}
+
+.card_info_price_left .price_num {
+  font-size: 36rpx;
+  color: #f00;
+}
+
+.card_info_price_right {
+  text-align: right;
+}
+
+.withdrawal.van-button {
+  width: 72px;
+  height: 33px;
+  line-height: 33px;
+}
+
+.withdrawal.van-button label {
+  font-weight: normal;
+  font-size: 26rpx;
+  color: #000;
+}
+.grid_box {
+  padding: 10px 16px;
+}
+.text_title {
+  color: #000000;
+  font-size: 26rpx;
+}

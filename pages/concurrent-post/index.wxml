@@ -1,0 +1,127 @@
+<van-search custom-class="van-search-input" shape="round" placeholder="请输入搜索内容" value="{{ value }}" background="#fff" />
+<van-cell border="{{false}}" custom-class="banner-box">
+  <swiper indicator-dots="{{false}}" autoplay="true" interval="{{interval}}" duration="{{duration}}" circular="true">
+    <block wx:for="{{banners}}" wx:key="index">
+      <swiper-item>
+        <image class="banner-img" src="{{item.imgUrl}}"></image>
+      </swiper-item>
+    </block>
+  </swiper>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+
+
+<view class="concurrent_post_item" wx:for="{{list}}" wx:key="index">
+  <van-cell border="{{false}}" center="{{true}}" use-label-slot>
+    <image slot="icon" style="width:40px;height:40px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%402x.png"></image>
+    <view class="cell_title" slot="title">武汉电子企业</view>
+    <view class="cell_label" slot="label">
+      <label>热门企业</label>
+    </view>
+    <view class="cell_content" bindtap="jumpMore">更多兼职</view>
+    <van-icon slot="right-icon" color="#3A7CFD" name="arrow" bindtap="jumpMore"/>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+
+  <view bindtap="jumpDetails">
+    <van-cell border="{{false}}" center="{{true}}">
+      <view class="cell_title" slot="title">高温消毒工</view>
+      <view class="cell_defalut">
+        <view class="number_box">
+          <label class="number_left">13</label>人/
+          <label class="number_right">30</label>人
+        </view>
+        <van-button color="#FFEA2F" plain custom-class="state_btn1">
+          <label>已报名</label>
+        </van-button>
+      </view>
+    </van-cell>
+    <view class="line-bottom">
+      <view class="van-hairline"></view>
+    </view>
+  </view>
+
+  <view bindtap="jumpDetails">
+    <van-cell border="{{false}}" center="{{true}}">
+      <view class="cell_title" slot="title">电子电器产品组包装</view>
+      <view class="cell_defalut">
+        <view class="number_box">
+          <label class="number_left">18</label>人/
+          <label class="number_right">30</label>人
+        </view>
+        <van-button color="#FFEA2F" custom-class="state_btn1">
+          <label>立即报名</label>
+        </van-button>
+      </view>
+    </van-cell>
+    <view class="line-bottom">
+      <view class="van-hairline"></view>
+    </view>
+  </view>
+
+  <view bindtap="jumpDetails">
+    <van-cell border="{{false}}" center="{{true}}">
+      <view class="cell_title" slot="title">质检包装工</view>
+      <view class="cell_defalut">
+        <view class="number_box">
+          <label class="number_left">30</label>人/
+          <label class="number_right">30</label>人
+        </view>
+        <van-button color="#E9F4FF" custom-class="state_btn1">
+          <label>已报满</label>
+        </van-button>
+      </view>
+    </van-cell>
+    <view class="line-bottom">
+      <view class="van-hairline van-hairline-700"></view>
+    </view>
+  </view>
+</view>
+
+<view class="concurrent_post_dynamic_item" bindtap="jumpDetails">
+  <van-cell border="{{false}}" center="{{true}}">
+    <image slot="icon" style="width:40px;height:40px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%402x.png"></image>
+    <view class="cell_title" slot="title">便利店</view>
+    <view class="cell_time" slot="right-icon">今天 11:00</view>
+  </van-cell>
+  <view class="concurrent_post_dynamic_content">冬天到了，本店需求量陡增，急需4名送零食及其他代跑腿业务的兼职，两男两女，有意者尽快报名</view>
+  <view class="concurrent_post_dynamic_img">
+    <image style="width: 100%;" mode="widthFix" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/dddd.png"></image>
+  </view>
+  <view class="concurrent_post_dynamic_footer">
+    <view class="concurrent_post_dynamic_footer_text">
+      已报
+      <label class="number_left">17</label>人/总需求
+      <label class="number_right">30</label>人
+    </view>
+    <van-button color="#E9F4FF" custom-class="state_btn1">
+      <label>已报满</label>
+    </van-button>
+  </view>
+   <view class="line-bottom">
+      <view class="van-hairline van-hairline-700"></view>
+    </view>
+</view>
+
+<view class="concurrent_post_dynamic_item" bindtap="jumpDetails">
+  <van-cell border="{{false}}" center="{{true}}">
+    <image slot="icon" style="width:40px;height:40px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%402x.png"></image>
+    <view class="cell_title" slot="title">便利店</view>
+    <view class="cell_time" slot="right-icon">今天 11:00</view>
+  </van-cell>
+  <view class="concurrent_post_dynamic_content">冬天到了，本店需求量陡增，急需4名送零食及其他代跑腿业务的兼职，两男两女，有意者尽快报名</view>
+  <view class="concurrent_post_dynamic_footer">
+    <view class="concurrent_post_dynamic_footer_text">
+      已报
+      <label class="number_left">17</label>人/总需求
+      <label class="number_right">30</label>人
+    </view>
+    <van-button color="#E9F4FF" custom-class="state_btn1">
+      <label>已报满</label>
+    </van-button>
+  </view>
+</view>

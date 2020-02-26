@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "商城",
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "van-search": "../../components/search/index",
+    "van-grid": "../../components/grid/index",
+    "van-grid-item": "../../components/grid-item/index"
+  }
+}

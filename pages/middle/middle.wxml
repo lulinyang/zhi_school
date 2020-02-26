@@ -1,0 +1,41 @@
+<!--pages/middle/middle.wxml-->
+<view class="form_box">
+  <view class="user_box">
+    <image class="user_head" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap%20Copy%402x.png" style="width:48rpx;height:48rpx;"></image>
+    <label class="user_name_info">艺术学院-方拾贰</label>
+  </view>
+  <textarea bindinput="getContent" value="{{content}}" class="textarea" placeholder="请输入发布的内容" placeholder-class="placeholder_text"></textarea>
+  <van-row custom-class="row_item">
+    <van-col span="12" custom-class="label_title">显示的圈子：</van-col>
+    <van-col span="12" custom-class="label_content">
+      <label class="push_checkbox_box">
+        <van-checkbox label-class="push_checkbox" value="{{ checked1 }}" shape="square" bind:change="onChange1" icon-size="13px">本校圈</van-checkbox>
+      </label>
+      <label class="push_checkbox_box">
+        <van-checkbox label-class="push_checkbox" value="{{ checked2 }}" shape="square" bind:change="onChange2" icon-size="13px">高校圈</van-checkbox>
+      </label>
+    </van-col>
+  </van-row>
+  <view class="van-hairline"></view>
+  <van-row custom-class="row_item">
+    <van-col span="12" custom-class="label_title">是否允许评论：</van-col>
+    <van-col span="12" custom-class="label_content">
+      <van-switch checked="{{ isAllow }}" size="16" bind:change="onChange" />
+    </van-col>
+  </van-row>
+  <view class="van-hairline"></view>
+  <view class="upload_img_title">上传图片</view>
+  <view>
+    <image src="../../images/upload_img_icon.png" style="width:140rpx;height:140rpx;" wx:if="{{!img}}" bindtap="uploadImg"></image>
+    <image src="{{baseUrl + img}}" style="width:140rpx;height:140rpx;" wx:else bindtap="uploadImg"></image>
+  </view>
+</view>
+
+<view class="btn_box">
+  <van-button color="#FFE600" custom-class="submit_btn" disabled="{{isSubmit}}" bind:click="submit">
+    <label>发布</label>
+  </van-button>
+</view>
+
+<view style="height:{{isIphoneX ? 184 : 120}}rpx"></view>
+<tabbar tabbar="{{tabbar}}"></tabbar>

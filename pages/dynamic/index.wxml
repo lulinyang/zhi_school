@@ -1,0 +1,69 @@
+<view class="top_user_info_box" style="background-image: url({{bgUrl}}/in_bg.png);">
+  <van-cell border="{{false}}" center="{{true}}" custom-class="user_info_cell">
+    <image slot="icon" class="head_url" style="width:62px;height:62px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/head_url.png"></image>
+    <view class="user_cell_box">
+      <view class="user_name_">王菲</view>
+      <view class="user_dec">信息工程学院</view>
+    </view>
+  </van-cell>
+</view>
+<view class="line-bottom">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+
+
+<!-- 动态列表开始 -->
+<view class="dynamic_box">
+  <view class="dynamic_item" wx:for="list" wx:key="index" catchtap="jumpDetails">
+    <van-cell border="{{false}}">
+      <view class="dynamic_content">
+        <view class="created_at_top">今天 16:00</view>
+        <view class="dynamic_content_text">
+          表白今天1.2节课J4-312的监考女老师，太美丽了！爱了。
+        </view>
+        <view class="imgs">
+          <image src="https://lulinyang.oss-cn-beijing.aliyuncs.com/8b90bd73ab7f933d001a4ea4ef000d83.jpeg" mode="widthFix" style="width:100%;"></image>
+        </view>
+        <van-row>
+          <!-- <van-col span="8">
+            <view class="created_at">今天 16:00</view>
+          </van-col> -->
+          <van-col span="24">
+            <view class="user_tag">
+              <van-icon custom-class="dynamic_icon" size="16" name="../../images/fabulous_icon.png" />
+              <van-icon custom-class="dynamic_icon" size="16" name="../../images/msg_icon.png" />
+              <van-icon custom-class="dynamic_icon" size="16" name="../../images/share_icon.png" />
+            </view>
+          </van-col>
+        </van-row>
+        <view class="dynamic_reply">
+          <view>
+            <van-icon custom-class="dynamic_icon2" name="../../images/fabulous_icon.png" />
+            <label class="fabulous_user_name">vimokso</label>
+            <label class="fabulous_user_names">等89人觉得很赞</label>
+          </view>
+          <view class="van-hairline"></view>
+          <view>
+            <van-icon custom-class="dynamic_icon2" name="../../images/msg_icon.png" />
+            <label class="fabulous_user_replys">26条评论回复</label>
+          </view>
+          <view class="dynamic_reply_info">
+            <label>信息工程学院-程圆圆：</label>我也在那个教室考试，老师真的很漂亮哦。
+          </view>
+          <view class="dynamic_reply_info">
+            <label>楼主</label>回复
+            <label>信息工程学院-程圆圆</label>是吗太巧了
+          </view>
+          <view class="dynamic_reply_info">
+            <label>艺术设计学院-吴磊：</label>活捉一名考试不认真的同学，哈哈。
+          </view>
+        </view>
+      </view>
+
+    </van-cell>
+    <view class="line-bottom" style="margin-top:20rpx;margin-bottom:10rpx;">
+      <view class="van-hairline van-hairline-700"></view>
+    </view>
+  </view>
+</view>
+<!-- 动态列表结束 -->

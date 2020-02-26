@@ -1,0 +1,55 @@
+/* pages/individual/index.wxss */
+
+button:not([size='mini']) {
+  min-height: 0;
+}
+
+.top_user_info_box {
+  margin: 16px;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.user_info_cell.van-cell {
+  background: transparent;
+}
+
+.van_btn.van-button {
+  width: 80px;
+  height: 32px;
+  line-height: 32px;
+}
+
+.van_btn.van-button label {
+  font-size: 28rpx;
+  color: #000;
+  font-weight: normal;
+  margin-left: 6rpx;
+}
+
+.user_cell_box {
+  text-align: left;
+   padding-left: 16rpx;
+}
+
+.user_name_ {
+  font-size: 28rpx;
+  color: #333333;
+  font-weight: 500;
+}
+
+.user_dec {
+  background-color: #FFF9C2;
+  font-size: 20rpx;
+  color: #666666;
+  line-height: 36rpx;
+  display: inline-block;
+  padding-left: 6rpx;
+  padding-right: 8rpx;
+  border-radius: 4rpx;
+}
+.created_at_top {
+  font-size: 26rpx;
+  color: #000000;
+  padding: 0 0 16rpx;
+}

@@ -1,0 +1,82 @@
+.van-cell.banner-box {
+  padding-top: 0;
+}
+.swiper {
+  height: 161px;
+}
+.banner-img {
+  width: 100%;
+  height: 161px
+}
+
+.cell_title {
+  color: #333;
+  font-size: 26rpx;
+  padding-left: 16rpx;
+}
+
+.cell_label {
+  padding-left: 16rpx;
+}
+.cell_time {
+  font-size: 26rpx;
+  color: #000;
+}
+
+.concurrent_post_dynamic_content {
+  padding: 0 16px 10px;
+  font-size: 26rpx;
+  color: #222;
+}
+
+.concurrent_post_dynamic_img {
+  padding: 0 16px 10px;
+}
+
+.concurrent_post_dynamic_footer {
+  padding: 0 16px 10px;
+  text-align: right;
+}
+
+.concurrent_post_dynamic_footer_text {
+  display: inline-block;
+  font-size: 26rpx;
+  color: #000;
+  margin-right: 16rpx;
+}
+
+.state_btn1.van-button {
+  width: 80px;
+  height: 33px;
+  line-height: 33px;
+  padding: 0 16rpx;
+}
+
+.state_btn1.van-button label {
+  color: #333;
+  font-size: 26rpx;
+}
+.number_right {
+  color: #FF0000;
+}
+
+.span_text {
+  color: #222222;
+  font-size: 26rpx;
+  line-height: 23px;
+}
+.span_text_right {
+  text-align: right;
+}
+
+.span_text_right label {
+   color: #FF0000;
+ 
+}
+.span_text_right label.color {
+  font-size: 36rpx;
+}
+.icon_van {
+  vertical-align: middle;
+  margin-right: 6rpx;
+}

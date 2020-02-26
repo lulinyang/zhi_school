@@ -1,0 +1,69 @@
+<view class="card_company_box" style="background-image: url({{bgUrl}}/company_bg.png);">
+  <van-cell border="{{false}}" center="{{true}}" custom-class="company_info_cell">
+    <image slot="icon" style="width:40px;height:40px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap.png"></image>
+    <view class="company_name" slot="title">东南枝旅行社</view>
+    <van-button slot="right-icon" custom-class="contact" color="#FFE600" size="mini" icon="../../images/tel_icon.png">
+      <label>联系客服</label>
+    </van-button>
+  </van-cell>
+</view>
+<view class="line-bottom">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+
+<view class="concurrent_post_dynamic_item" wx:for="{{list}}" wx:key="index" bindtap="jumpDetails">
+  <van-cell border="{{false}}" center="{{true}}" custom-class="cell_title_cell">
+    <view class="cell_title_a" slot="title">武汉木兰生态之旅（3天）</view>
+    <view class="cell_time" slot="right-icon">今天 11:00</view>
+  </van-cell>
+  <view class="concurrent_post_dynamic_content">
+    <van-row>
+      <van-col span="16" custom-class="span_text">
+        <van-icon custom-class="icon_van" name="../../images/time_icon.png" size="12" /> 开始时间：2020年2月2日7:30
+      </van-col>
+      <van-col span="8" custom-class="span_text span_text_right">
+        <label>￥</label>
+        <label class="color">300</label>/人
+      </van-col>
+      <van-col span="24" custom-class="span_text">
+        <van-icon custom-class="icon_van" name="../../images/shan_icon.png" size="12" /> 景点：木兰草原、木兰天池、木兰清凉寨
+      </van-col>
+      <van-col span="24" custom-class="span_text">
+        <van-icon custom-class="icon_van" name="../../images/travel_icon.png" size="12" /> 行程：第一天去“离天堂最近的地方”--木兰草原，第 二天在木兰天池感受十里峡谷野樱花盛开的魅力，第三天到木兰清凉寨领略木兰生态之旅著名的风光。
+      </van-col>
+    </van-row>
+  </view>
+  <view class="concurrent_post_dynamic_img">
+    <image style="width: 100%;" mode="widthFix" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/dddd.png"></image>
+  </view>
+  <van-row custom-class="item_footer">
+    <van-col span="8" custom-class="item_footer_left">
+      <label style="color:#ff0000">￥</label>
+      <label class="size_font">300</label>
+      <label class="item_footer_unit">/人</label>
+      <label class="item_footer_tag">包住</label> 
+    </van-col>
+    <van-col span="16" custom-class="concurrent_post_footer">
+      <view class="concurrent_post_footer_text">
+        已报名
+        <label class="number_right">30</label>人
+      </view>
+      <van-button color="#FFEA2F" custom-class="state_btn1">
+        <label>立即报名</label>
+      </van-button>
+    </van-col>
+
+  </van-row>
+  <!-- <view class="concurrent_post_dynamic_footer">
+    <view class="concurrent_post_dynamic_footer_text">
+      已报名
+      <label class="number_right">30</label>人
+    </view>
+    <van-button color="#FFEA2F" custom-class="state_btn1">
+      <label>立即报名</label>
+    </van-button>
+  </view> -->
+  <view class="line-bottom" wx:if="{{index != (list.length - 1)}}">
+    <view class="van-hairline van-hairline-700"></view>
+  </view>
+</view>

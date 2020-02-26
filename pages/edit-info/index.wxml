@@ -1,0 +1,72 @@
+<view class="my_info_title">我的实名信息</view>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+
+<view>
+  <van-cell border="{{false}}" center="{{false}}">
+    <view slot="icon">姓名：</view>
+    <input class="address_info_user" disabled="{{disabled_name}}" value="王靖雯"></input>
+    <view slot="right-icon" class="right_info" bindtap="editName">
+      <view class="right_info_box">
+        <van-icon custom-class="write_icon" name="../../images/write_icon.png" size="13" />
+        <label>修改</label>
+      </view>
+    </view>
+  </van-cell>
+  <view class="line-bottom" style="padding-left: 58px;">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+<view>
+  <van-cell border="{{false}}" center="{{false}}">
+    <view slot="icon">电话：</view>
+    <input class="address_info_user" value="159725364999" disabled="{{disabled_name}}"></input>
+    <view slot="right-icon" class="right_info" bindtap="editTel">
+      <view class="right_info_box">
+        <van-icon custom-class="write_icon" name="../../images/write_icon.png" size="13" />
+        <label>修改</label>
+      </view>
+    </view>
+  </van-cell>
+  <view class="line-bottom" style="padding-left: 58px;">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+<view>
+  <van-cell border="{{false}}" center="{{false}}">
+    <view slot="icon">学校：</view>
+    <input class="address_info_user" value="湖北美术学院" disabled="{{disabled_school}}"></input>
+    <view slot="right-icon" class="right_info" bindtap="editSchool">
+      <view class="right_info_box">
+        <van-icon custom-class="write_icon" name="../../images/write_icon.png" size="13" />
+        <label>修改</label>
+      </view>
+    </view>
+  </van-cell>
+  <view class="line-bottom" style="padding-left: 58px;">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+<view>
+  <van-cell border="{{false}}" center="{{false}}">
+    <view slot="icon">院系：</view>
+    <input class="address_info_user" value="艺术设计学院" disabled="{{disabled_system}}" ></input>
+    <view slot="right-icon" class="right_info" bindtap="editSystem">
+      <view class="right_info_box">
+        <van-icon custom-class="write_icon" name="../../images/write_icon.png" size="13" />
+        <label>修改</label>
+      </view>
+    </view>
+  </van-cell>
+  <view class="line-bottom" style="padding-left: 58px;">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+<view class="btn_box" style="margin-top: 50px">
+  <van-button color="#FFE600" custom-class="submit_btn" bind:click="submit">
+    <label>保存并提交</label>
+  </van-button>
+</view>

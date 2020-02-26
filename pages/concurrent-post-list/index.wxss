@@ -1,0 +1,2 @@
+/* pages/concurrent-post-list/index.wxss */
+@import "../concurrent-post/index.wxss";

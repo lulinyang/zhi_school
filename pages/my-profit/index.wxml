@@ -1,0 +1,14 @@
+<view wx:for="{{list}}" wx:key="index">
+  <van-cell border="{{false}}" center="{{true}}">
+    <image slot="icon" custom-class="wx_icon" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/8b90bd73ab7f933d001a4ea4ef000d83.jpeg" style="width: 120rpx;height:120rpx;" />
+    <view class="profit_box">
+      <view class="profit_title">武汉电子企业</view>
+      <view class="profit_label">电子产品组包装质检</view>
+      <view class="profit_label">2020/02/04-2020/02/08</view>
+    </view>
+    <view slot="right-icon" class="add_money">+￥200</view>
+  </van-cell>
+  <view class="line-bottom">
+    <view class="van-hairline"></view>
+  </view>
+</view>

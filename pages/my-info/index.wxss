@@ -1,0 +1,24 @@
+/* pages/my-info/index.wxss */
+.my_info_title {
+  padding: 20rpx 32rpx;
+  color: #000000;
+  font-size: 26rpx;
+}
+.my_info_user {
+  color: #333333;
+  font-size: 28rpx;
+  padding-left: 16rpx;
+  text-align: left;
+}
+.van-hairline.van-hairline-700 {
+  height: 16rpx;
+  border-radius: 8rpx;
+}
+.real_name_info {
+  text-align: left;
+  color: #000;
+}
+.real_name_info label {
+  line-height: 60rpx;
+  font-size: 28rpx;
+}

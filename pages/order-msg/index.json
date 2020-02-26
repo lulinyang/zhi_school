@@ -1,0 +1,7 @@
+{
+  "navigationBarTitleText": "订单消息",
+  "usingComponents": {
+    "van-tag": "../../components/tag/index",
+    "van-image": "../../components/image/index"
+  }
+}

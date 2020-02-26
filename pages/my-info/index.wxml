@@ -1,0 +1,37 @@
+<view class="my_info_title">我的微信信息</view>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+<van-cell border="{{false}}" center="{{true}}">
+  <image slot="icon" style="width:84rpx;height:84rpx;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/5061bdcd1ca0be9e2f412c8877fcbf9c%20copy%202%402x.png"></image>
+  <view class="my_info_user">昵称：vimokso</view>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+<view class="my_info_title">我的实名信息</view>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+<van-cell border="{{false}}" center="{{true}}">
+  <van-row custom-class="real_name_info">
+    <van-col span="12">
+      <label>姓名：王靖雯</label>
+    </van-col>
+    <van-col span="12">
+      <label>电话：159725364999</label>
+    </van-col>
+     <van-col span="12">
+      <label>学校：湖北美术学院</label>
+     </van-col>
+    <van-col span="12">
+      <label>院系：艺术设计学院</label>
+    </van-col> 
+  </van-row>
+</van-cell>
+
+<view class="btn_box" style="margin-top: 50px">
+  <van-button color="#FFE600" custom-class="submit_btn" bind:click="jumpEditIfo">
+    <label>修改实名信息</label>
+  </van-button>
+</view>

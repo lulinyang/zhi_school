@@ -1,0 +1,100 @@
+<van-cell border="{{false}}" center="{{true}}">
+  <image slot="icon" style="width: 40px;height:40px;" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap.png"></image>
+  <view class="company_name">东南枝旅行社</view>
+</van-cell>
+<view class="line-bottom" style="margin-top:20rpx;">
+  <view class="van-hairline"></view>
+</view>
+<view class="tourism_dec">武汉木兰生态之旅（3天）</view>
+<view class="tourism_dec_word">
+  <label>木兰草原</label>
+  <label>木兰天池</label>
+  <label>木兰清凉寨</label>
+</view>
+<view class="tourism_img">
+  <image style="width:100%;" mode="widthFix" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/shan_img.png"></image>
+</view>
+
+<view class="tourism_dec_info">
+  <van-icon custom-class="icon_van" name="../../images/time_icon.png" size="12" /> 开始时间：2020年2月2日7:30
+</view>
+<view class="tourism_dec_info">
+  <van-icon custom-class="icon_van" name="../../images/tr_address_icon.png" size="12" /> 集合地点：北京化工大学 北大门
+</view>
+<view class="tourism_dec_info">使用方法：出行人的身份证/校园卡/学生证证明身份</view>
+<view class="line-bottom" style="margin: 20rpx 0;">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+
+<van-cell border="{{false}}">
+  <view class="input_label" slot="icon">出行人姓名：</view>
+  <view class="input_item">
+    <input placeholder="请输入真实姓名" placeholder-class="input_item_placeholder"></input>
+  </view>
+  <view class="van-hairline" style="margin-top: 10rpx;"></view>
+</van-cell>
+<van-cell border="{{false}}">
+  <view class="input_label" slot="icon">身份证号码：</view>
+  <view class="input_item">
+    <input placeholder="请输入真身份证号码" placeholder-class="input_item_placeholder"></input>
+  </view>
+  <view class="van-hairline" style="margin-top: 10rpx;"></view>
+</van-cell>
+<van-cell border="{{false}}">
+  <view class="input_label" slot="icon">手机号码 ：</view>
+  <view class="input_item">
+    <input placeholder="请输入手机号码" placeholder-class="input_item_placeholder"></input>
+  </view>
+  <view class="van-hairline" style="margin-top: 10rpx;"></view>
+</van-cell>
+<view class="line-bottom" style="margin: 20rpx 0;">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+
+<van-cell border="{{false}}">
+  <view class="input_label" slot="icon">同行人姓名：</view>
+  <view class="input_item">
+    <input placeholder="请输入真实姓名" placeholder-class="input_item_placeholder"></input>
+  </view>
+  <view class="van-hairline" style="margin-top: 10rpx;"></view>
+</van-cell>
+<van-cell border="{{false}}">
+  <view class="input_label" slot="icon">身份证号码：</view>
+  <view class="input_item">
+    <input placeholder="请输入真身份证号码" placeholder-class="input_item_placeholder"></input>
+  </view>
+  <view class="van-hairline" style="margin-top: 10rpx;"></view>
+</van-cell>
+<van-cell border="{{false}}">
+  <view class="input_label" slot="icon">手机号码 ：</view>
+  <view class="input_item">
+    <input placeholder="请输入手机号码" placeholder-class="input_item_placeholder"></input>
+  </view>
+  <view class="van-hairline" style="margin-top: 10rpx;"></view>
+</van-cell>
+
+<view class="btn_add_box">
+  <van-button icon="plus" color="#19D079" custom-class="plus_btn">
+    <label>增加同行人</label>
+  </van-button>
+</view>
+
+<van-cell custom-class="statistics" border="{{false}}" center="{{true}}">
+  <view class="statistics_left">
+    <view>300元/人</view>
+    <view>共2人</view>
+  </view>
+  <view slot="right-icon" class="right_icon_text">
+    合计：<label style="color:#ff0000;">￥</label>
+    <label class="font_size">600</label>
+  </view>
+</van-cell>
+
+<view class="msg_tips">我们会为您购买人身意外保险，支付前请再次确认您的姓名及身份证信息。</view>
+
+
+<view class="btn_box">
+  <van-button color="#FFE600" custom-class="submit_btn" bind:click="submit">
+    <label>立即支付</label>
+  </van-button>
+</view>

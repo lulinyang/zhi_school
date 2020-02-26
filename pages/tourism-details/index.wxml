@@ -1,0 +1,90 @@
+<van-cell border="{{false}}" center="{{true}}">
+  <image slot="icon" style="width:40px;height:40px" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Bitmap.png"></image>
+  <view class="details_name" slot="title">东南枝旅行社</view>
+  <view slot="right-icon" class="details_time">今天 11:00</view>
+</van-cell>
+<view class="line-bottom" style="margin-top:20rpx;">
+  <view class="van-hairline"></view>
+</view>
+
+<view class="details_dec_box">
+  <view class="details_dec_line_1">武汉木兰生态之旅（3天）</view>
+  <view class="details_dec_line_2">
+    <van-icon custom-class="icon_van" name="../../images/tel_icon.png" size="12" /> 商家电话：15972539999
+  </view>
+  <view class="details_dec_line_3">
+    <van-icon custom-class="icon_van" name="../../images/time_icon.png" size="12" /> 开始时间：2020年2月2日7:30
+  </view>
+</view>
+
+<view class="details_title_cell">行程安排</view>
+
+<view wx:for="{{list}}" wx:key="index">
+  <van-cell border="{{false}}" center="{{true}}">
+    <label slot="icon" class="dot"></label>
+    <view slot="title" class="time_title_box">
+      <label class="time_title_day">第{{item.index}}天</label>
+      <label class="time_title_address">木兰草原</label>
+    </view>
+  </van-cell>
+
+  <van-cell border="{{false}}" center="{{true}}" custom-class="content_cell">
+    <view class="time_content_box" style="border-left: {{(index+1) === list.length ? 0 : 3}}rpx solid #FFE600;">
+      行程：第一天去“离天堂最近的地方”--木兰草原，第 二天在木兰天池感受十里峡谷野樱花盛开的魅力，第三天到木兰清凉寨领略木兰生态之旅著名的风光。
+    </view>
+  </van-cell>
+  <van-cell border="{{false}}" center="{{true}}" custom-class="content_cell">
+    <view class="time_content_box" style="border-left: {{(index+1) === list.length ? 0 : 3}}rpx solid #FFE600;">
+      <image style="width:100%" mode="widthFix" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/dddd.png"></image>
+    </view>
+  </van-cell>
+</view>
+
+<view class="line-bottom" style="margin-top: 20rpx;margin-bottom: 20rpx;">
+  <view class="van-hairline van-hairline-700"></view>
+</view>
+
+<view class="details_dec_box">
+  <view class="details_dec_line_1 details_dec_line_color">
+    费用：
+    <label>￥</label>
+    <label style="font-size:16px;">300</label>
+    /人
+  </view>
+  <view class="details_dec_line_2">
+    费用包含：3天景点间旅游大巴车，2晚经济型住宿。3天景点间旅游大巴车，2晚经济型住宿。巴拉巴
+  </view>
+</view>
+
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+
+<view class="details_dec_box">
+  <view class="details_dec_line_2">
+    <van-icon custom-class="icon_van" name="../../images/time_icon.png" size="12" /> 集合时间：2020年5月16日
+  </view>
+  <view class="details_dec_line_3">
+    <van-icon custom-class="icon_van" name="../../images/travel_icon.png" size="12" /> 集合地点：北京化工大学 北大门
+  </view>
+  <view class="details_dec_line_3">
+    其他注意事项：由于草原早晚温差较大，请合理着保暖衣物。由于草原早晚温差较大，请合理着保暖衣物。由于草原早晚温差较大，请合理着保暖衣物。
+  </view>
+</view>
+
+<view class="notice_text">说明：行程开始24小时之前可申请退款，24小时内无法申请退款。</view>
+
+<view class="footer_btn_box">
+  <van-row gutter="16">
+    <van-col span="8">
+      <van-button custom-class="left_btn" color="#19D079">
+        <label>联系客服</label>
+      </van-button>
+    </van-col>
+    <van-col span="16">
+      <van-button custom-class="right_btn" color="#FFE600" bind:click="jumpOrder">
+        <label>立即报名</label>
+      </van-button>
+    </van-col>
+  </van-row>
+</view>

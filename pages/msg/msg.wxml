@@ -1,0 +1,51 @@
+<view>
+  <van-cell border="{{false}}" center="{{true}}" size="large" clickable url="/pages/private-letter/index">
+    <van-icon slot="icon" name="../../images/msg_icon1.png" size="18" />
+    <view class="msg_title">私信消息</view>
+    <view slot="right-icon">
+      <van-icon name="arrow" />
+    </view>
+  </van-cell>
+  <view class="van-hairline-box">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+<view>
+  <van-cell border="{{false}}" center="{{true}}" size="large" clickable url="/pages/dynamic-msg/index">
+    <van-icon slot="icon" name="../../images/msg_icon2.png" size="18" />
+    <view class="msg_title">动态消息</view>
+    <view slot="right-icon">
+      <van-icon name="arrow" />
+    </view>
+  </van-cell>
+  <view class="van-hairline-box">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+<view>
+  <van-cell border="{{false}}" center="{{true}}" size="large" clickable url="/pages/part-time-job/index">
+    <van-icon slot="icon" name="../../images/msg_icon3.png" size="18" />
+    <view class="msg_title">兼职消息</view>
+    <view slot="right-icon">
+      <van-icon name="arrow" />
+    </view>
+  </van-cell>
+  <view class="van-hairline-box">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+<view>
+  <van-cell border="{{false}}" center="{{true}}" size="large" clickable url="/pages/part-time-job/index">
+    <van-icon slot="icon" name="../../images/msg_icon4.png" size="18" />
+    <view class="msg_title">订单消息</view>
+    <view slot="right-icon">
+      <van-icon name="arrow" />
+    </view>
+  </van-cell>
+  <view class="van-hairline-box">
+    <view class="van-hairline"></view>
+  </view>
+</view>
+
+
+<tabbar tabbar="{{tabbar}}"></tabbar>

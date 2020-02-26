@@ -1,0 +1,9 @@
+{
+  "navigationBarTitleText": "我的",
+  "navigationBarBackgroundColor": "#FFEE56",
+  "usingComponents": {
+    "tabbar": "../../tabbarComponent/tabbar",
+    "van-grid": "../../components/grid/index",
+    "van-grid-item": "../../components/grid-item/index"
+  }
+}

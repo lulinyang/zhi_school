@@ -1,0 +1,6 @@
+{
+  "navigationBarTitleText": "兼职信息详情",
+  "usingComponents": {
+    "van-search": "../../components/search/index"
+  }
+}

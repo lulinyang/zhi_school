@@ -1,0 +1,75 @@
+<!--pages/goods-details/index.wxml-->
+<van-cell border="{{false}}">
+  <image style="width: 100%" mode="widthFix" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/goods_details.png"></image>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+<van-cell border="{{false}}" center="{{true}}">
+  <view class="details_name">书亦烧仙草（大杯）</view>
+  <view class="details_price">¥12</view>
+  <view slot="right-icon">
+    <van-icon custom-class="opt_cart" name="../../images/cut_icon.png" size="22" />
+    <view class="opt_cart opt_cart2">12</view>
+    <van-icon custom-class="opt_cart" name="../../images/add_icon.png" size="22" />
+  </view>
+</van-cell>
+<view class="line-bottom">
+  <view class="van-hairline"></view>
+</view>
+<van-cell border="{{false}}" center="{{true}}">
+  <view class="details_text">
+    好果配好茶，七种水果，满满的维C，超丰富的味觉验，四季春茶的清香完全不会掩盖水果的味道，浅闻花果香浓郁，饮时鲜甜之味，瞬间沁入心间。一口茶一口水果，每一丝都是喜悦的味道，解暑新技能GET。
+  </view>
+</van-cell>
+
+
+
+
+<view class="footer-box">
+  <van-row>
+    <van-col span="5">
+      <van-icon custom-class="cart_car" name="{{bgUrl}}/cart_icon.png" size="60" info="9" bind:click="showCart" />
+    </van-col>
+    <van-col span="11">
+      <view class="price_text">
+        <label>￥12</label>元</view>
+      <view class="other_price_text">另需配送费2元</view>
+    </van-col>
+    <van-col span="8">
+      <van-button custom-class="buy_btn" color="#EFECF0" size="small" wx:if="{{false}}">
+        <label>¥20起送</label>
+      </van-button>
+      <van-button custom-class="buy_btn" color="#FFE600" size="small" wx:else bind:click="jumpRealOrder">
+        <label>结算</label>
+      </van-button>
+    </van-col>
+  </van-row>
+</view>
+
+<!-- 购物车开始 -->
+<van-popup show="{{ show }}" bind:close="onClose" position="bottom">
+  <view class="goods_cart_box">
+    <view class="goods_cart_title">已选商品</view>
+    <view class="van-hairline" style="margin-top: 28rpx;"></view>
+  </view>
+  <van-cell custom-class="goods_cart_cell" border="{{false}}" center="{{true}}" wx:for="{{cart_list}}" wx:key="index">
+    <image slot="icon" src="https://lulinyang.oss-cn-beijing.aliyuncs.com/Mask%20Copy%402x.png" style="width:80rpx;height:80rpx;"></image>
+    <van-row custom-class="goods_cart_content">
+      <van-col span="12">
+        <view class="goods_item_name">书亦烧仙草</view>
+      </van-col>
+      <van-col span="4">
+        <view class="goods_item_price">￥12</view>
+      </van-col>
+      <van-col span="8" custom-class="goods_item_opt">
+        <van-icon custom-class="opt_cart" name="../../images/cut_icon.png" size="22" />
+        <view class="opt_cart opt_cart2">12</view>
+        <van-icon custom-class="opt_cart" name="../../images/add_icon.png" size="22" />
+      </van-col>
+    </van-row>
+    <view class="van-hairline" style="margin-top: 28rpx;" wx:if="{{index != (cart_list.length - 1)}}"></view>
+  </van-cell>
+  <view style="height:{{footer_height+10}}px"></view>
+</van-popup>
+<!-- 购物车结束 -->
